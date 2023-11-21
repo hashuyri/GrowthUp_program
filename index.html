@@ -24,19 +24,22 @@
 </head>
 
 <body>
+    <!-- ヘッダー -->
     <header class="header">
         <div>
             <img src="./img/corporatelogo_white.png">
         </div>
         <!-- 各セクションへのリンク -->
         <nav>
-            <a href="#">セミナー内容</a>
-            <a href="#news">お客様の声</a>
+            <a href="#seminor">セミナー内容</a>
+            <a href="#voice">お客様の声</a>
             <a href="#course">料金</a>
             <a href="#prof">代表紹介</a>
             <a href="#contact">お問い合わせ</a>
         </nav>
     </header>
+
+    <!-- トップ画像セクション -->
     <div class="top_image">
         <div id="top_image_text">
             <h1>オンラインでも大人数の集合研修でもない、</h1>
@@ -47,7 +50,9 @@
             <p id="top_tittle">Growth Upプログラム</p>
         </div>
     </div>
+
     <main>
+        <!-- 問題提起セクション -->
         <section class="problem">
             <div>
                 <h2 id="problem_under_bar">会計事務所の皆様</h2>
@@ -61,6 +66,8 @@
             </ul>
             <span class="dli-caret-down"></span>
         </section>
+
+        <!-- 解決方法提案セクション -->
         <section class="solution">
             <div id="solution_tittle">
                 <h2>Growth Upプログラムで実現できること</h2>
@@ -75,24 +82,91 @@
                     <p>依頼人の事務所でセミナーを実施するため、<b>必要最小限の工数</b>でセミナーを受けられる</p>
                 </div>
             </div>
+
             <div class="solution_box">
                 <div class="solution_text_box">
                     <div>
-                        <h3><u>少人数（10人以内）に限定</u></h3>
-                        <p>時間配分等においてより柔軟な対応が可能となるため、<b>内容の理解度が高まる</b></p>
+                        <h3><u>少人数に限定し開催</u></h3>
+                        <p>時間配分やセミナー内容など柔軟な対応が可能となるため、<b>内容の理解度が高まる</b></p>
                     </div>
                 </div>
                 <div class="solution_img">
                     <div class="solution_second_img"></div>
                 </div>
             </div>
+
             <div class="solution_box">
                 <div class="solution_img">
                     <div class="solution_third_img"></div>
                 </div>
                 <div class="solution_text_box">
                     <h3><u>実務に寄り添ったカリキュラム</u></h3>
-                    <p>年間100件以上の法人申告書作成に関与してきた＜経験＞をもとに一から作り上げたカリキュラムであるため、<b>より実務的な知識が身に付く</b></p>
+                    <p>年間100件以上の法人申告書作成に関与してきた＜経験＞をもとに一から作り上げたカリキュラムであるため、<b>より実務的な知識が1日で身に付く</b></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- セミナー内容詳細 -->
+        <section id="seminor">
+            <div id="seminor_tittle">
+                <h2>セミナー内容</h2>
+                <p>　※ 例示</p>
+            </div>
+            <div id="seminor_box">
+                <div class="seminor_contents">
+                    <div class="seminor_contents_icon_box">
+                        <div class="seminor_contents_icon"></div>
+                    </div>
+                    <h3>会計</h3>
+                    <div>
+                        <ul>
+                            <li>・BS、PLの仕組み</li>
+                            <li>・実現主義と発生主義</li>
+                            <li>・仕訳練習</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="seminor_contents">
+                    <div class="seminor_contents_icon_box">
+                        <div class="seminor_contents_icon"></div>
+                    </div>
+                    <h3>消費税</h3>
+                    <div>
+                        <ul>
+                            <li>・消費税の4要件</li>
+                            <li>・インボイス</li>
+                            <li>・税区分練習</li>
+                            <li>・消費税申告書解説</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="seminor_contents">
+                    <div class="seminor_contents_icon_box">
+                        <div class="seminor_contents_icon"></div>
+                    </div>
+                    <h3>法人税</h3>
+                    <div>
+                        <ul>
+                            <li>・会計と法人税の違い</li>
+                            <li>・所得税額控除</li>
+                            <li>・圧縮記帳と特別償却</li>
+                            <li>・仕訳練習</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="seminor_contents">
+                    <div class="seminor_contents_icon_box">
+                        <div class="seminor_contents_icon"></div>
+                    </div>
+                    <h3>法人税の申告</h3>
+                    <div>
+                        <ul>
+                            <li>・法人税申告書の意義</li>
+                            <li>・主な調整項目</li>
+                            <li>・法人税申告書解説</li>
+                            <li>・法人税申告書作成練習</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
@@ -102,15 +176,22 @@
             <img src="./img/about-image.jpg">
         </div>
 
+        <!-- お問い合わせボタン -->
+        <div class="inquiry_box">
+            <button type="button" onclick="location.href='#contact'" class="inquiry">お問い合わせはこちら</button>
+        </div>
+
+        <!-- 料金セクション -->
         <section id="course">
             <div class="course_top_box">
                 <a id="course_top_text">
-                    <h3>COURSE</h3>
+                    <h3>料金</h3>
                 </a>
                 <p>未経験からでもスタートができるよう、カリキュラムは多くの専門家や</p>
                 <p>現役チーズ職人のアドバイスのもと、作られました。</p>
             </div>
         </section>
+
         <section id="news" class="news">
             <div class="news_top_box">
                 <a class="yellow_text">
@@ -154,8 +235,8 @@
                 </div>
             </div>
         </section>
-        <div class="more">
-            <button type="button" onclick="window.open('../knowledge.html')" id="more">More</button>
+        <div class="inquiry_box">
+            <button type="button" onclick="window.open('../knowledge.html')" class="inquiry">More</button>
         </div>
         <section id="access" class="access">
             <div class="access_box">
