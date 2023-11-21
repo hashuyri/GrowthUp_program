@@ -1,0 +1,31 @@
+{
+	"folders": [
+		{
+			"name": "silvestris",
+			"path": "."
+		}
+	],
+	"settings": {
+		"workbench.colorCustomizations": {
+			"activityBar.activeBackground": "#236380",
+			"activityBar.background": "#236380",
+			"activityBar.foreground": "#e7e7e7",
+			"activityBar.inactiveForeground": "#e7e7e799",
+			"activityBarBadge.background": "#d669b4",
+			"activityBarBadge.foreground": "#15202b",
+			"commandCenter.border": "#e7e7e799",
+			"sash.hoverBorder": "#236380",
+			"statusBar.background": "#184458",
+			"statusBar.foreground": "#e7e7e7",
+			"statusBarItem.hoverBackground": "#236380",
+			"statusBarItem.remoteBackground": "#184458",
+			"statusBarItem.remoteForeground": "#e7e7e7",
+			"titleBar.activeBackground": "#184458",
+			"titleBar.activeForeground": "#e7e7e7",
+			"titleBar.inactiveBackground": "#18445899",
+			"titleBar.inactiveForeground": "#e7e7e799"
+		},
+		"peacock.color": "#184458",
+		"liveServer.settings.multiRootWorkspaceName": "silvestris"
+	}
+}

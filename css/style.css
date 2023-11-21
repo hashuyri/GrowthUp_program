@@ -1,9 +1,7 @@
 /*全体 共通
-最初から設定してあるので特に変更
-しなくても大丈夫です♪
 -----------------*/
 body {
-	font-family: Roboto, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+	font-family: 'Noto Sans JP', sans-serif;
 	font-size: 21px;
 	line-height: 1.8;
 }
@@ -18,6 +16,10 @@ body {
 	-o-box-sizing: border-box;
 	-ms-box-sizing: border-box;
 	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
 }
 
 /*ーーーーーーーーーーー*/
@@ -65,23 +67,24 @@ h2 {
 }
 
 /* ヘッダーリンク */
+/* リンクをクリックする前 */
 .header a:link {
-	/* リンクをクリックする前 */
 	color: #fdfbfb;
 	font-weight: bold;
 }
 
+/* リンクをクリックした後 */
 .header a:visited {
-	/* リンクをクリックした後 */
 	color: #fdfbfb;
 }
 
+/* マウスカーソル合わせた時 */
 .header a:hover {
-	/* マウスカーソル合わせた時 */
 	text-decoration: underline;
 	color: #fdfbfb;
 }
 
+/* mainイメージ */
 .top_image {
 	background-image: url(../img/main_image.png);
 	background-size: 100%;
@@ -94,6 +97,7 @@ h2 {
 	align-items: left;
 }
 
+/* 大人数でも・・ */
 #top_image_text {
 	margin-left: 40px;
 	height: 55%;
@@ -106,6 +110,7 @@ h2 {
 	font-weight: bold;
 }
 
+/* Growth Upプログラム */
 #top_tittle {
 	margin-left: 40px;
 	height: 45%;
@@ -130,6 +135,7 @@ h2 {
 	text-underline-position: above;
 }
 
+/* ▼ */
 .dli-caret-down {
 	margin: 80px 0;
 	vertical-align: middle;
@@ -145,7 +151,6 @@ h2 {
 /* 解決方法 */
 .solution {
 	padding-bottom: 80px;
-	/* background-color: rgb(250, 247, 247); */
 }
 
 #solution_tittle {
@@ -154,6 +159,7 @@ h2 {
 	justify-content: center;
 }
 
+/* タイトルにアンダーライン */
 .solution h2 {
 	width: fit-content;
 	background: linear-gradient(transparent 30%, #91dceb 0%);
@@ -166,42 +172,49 @@ h2 {
 	display: flex;
 }
 
-/* 幅50％のクラス */
+/* 3つの画像 */
 .solution_img {
 	width: 50%;
 }
 
+/* 1枚目の画像 */
 .solution_first_img {
 	width: 100%;
-	aspect-ratio: 682 / 460;
+	aspect-ratio: 682 / 450;
 	background-image: url(../img/solution_01.png);
 	background-size: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	color: transparent;
+	border-radius: 7px;
 }
 
+/* 2枚目の画像 */
 .solution_second_img {
 	width: 100%;
-	aspect-ratio: 682 / 460;
+	aspect-ratio: 682 / 450;
 	background-image: url(../img/solution_02.png);
 	background-size: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	color: transparent;
+	border-radius: 7px;
 }
 
+/* 3枚目の画像 */
 .solution_third_img {
 	width: 100%;
-	aspect-ratio: 682 / 460;
+	aspect-ratio: 682 / 450;
 	background-image: url(../img/solution_03.png);
 	background-size: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	color: transparent;
+	border-radius: 7px;
+	filter: blur(2px);
 }
 
 /* 「solution」textの箱 */
@@ -211,8 +224,77 @@ h2 {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	background-color: rgb(250, 247, 247);
+	border-radius: 7px;
+	background-color: rgb(248, 243, 243);
+	box-shadow: inset 0px 0px 25px 1px rgba(0, 0, 0, 0.23);
 }
+
+/* テキスト共通 */
+.solution_text_box h3 {
+	margin-bottom: 30px;
+	font-size: 28px;
+	/* color: #123474; */
+	/* background: linear-gradient(90deg, #008482 0.1%, #0EB784 42.72%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent; */
+}
+
+/* テキスト説明文 */
+.solution_text_box p {
+	font-size: 19px;
+}
+
+/* セミナー内容紹介セクション */
+#seminor {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* タイトル */
+#seminor_tittle {
+	display: flex;
+}
+
+/* 土台のBOX */
+#seminor_box {
+	margin-top: 20px;
+	width: 100%;
+	height: 580px;
+	display: flex;
+	justify-content: center;
+}
+
+/* 各コンテンツ共通 */
+.seminor_contents {
+	margin: 0 20px;
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-image: linear-gradient(180deg, rgba(0, 117, 148, 1) 7%, rgba(255, 255, 255, 0));
+	border-radius: 25px;
+}
+
+/* アイコンを表示するためのBOX */
+.seminor_contents_icon_box {
+	padding: 30px 0 20px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* アイコン共通 */
+.seminor_contents_icon {
+	width: 200px;
+	height: 200px;
+	background-color: #ffffff;
+	border-radius: 100px;
+}
+
+
 
 /* ループ画像を作る */
 .loop_img {
@@ -248,18 +330,41 @@ h2 {
 	animation: loop2 40s linear infinite;
 }
 
-/* 「COURSE」を上下に4分割した内の一番上 */
-#course {
-	margin-top: -16px;
-	padding-top: 16px;
+/* 「お問い合わせ」ボタン配置 */
+.inquiry_box {
+	margin-top: 60px;
+	display: flex;
+	justify-content: center;
 }
 
-.course_top_box {
-	padding: 64px 0px;
+/* 「お問い合わせ」ボタン詳細 */
+.inquiry {
+	width: 500px;
+	height: 80px;
+	color: white;
+	font-size: 23px;
+	font-weight: bold;
+	background: linear-gradient(93.72deg, #E12850 0%, #F5873C 100%);
+	border-radius: 50px;
+	box-shadow: 0px 10px 10px rgba(255, 224, 191, 1);
+	cursor: pointer;
+}
+
+/* 「お問い合わせ」ボタンクリック時 */
+.inquiry:hover {
+	background: #E12850;
+	box-shadow: none;
+	transform: translateY(2px);
+	/* 上（Y）方向に4px動かす */
+}
+
+/* 「COURSE」を上下に4分割した内の一番上 */
+#course {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	background-color: #005272;
 }
 
 /* 「COURSE」 */
@@ -327,34 +432,6 @@ h2 {
 /* 「NEWS」を上下に2分割した内の下の箱の3要素の日付 */
 .news_bottom_box_text {
 	padding: 32px 0px 24px;
-}
-
-/* 「MORE」ボタン配置 */
-.more {
-	margin: 56px 0px 48px;
-	display: flex;
-	justify-content: center;
-}
-
-/* 「MORE」ボタン詳細 */
-#more {
-	width: 300px;
-	height: 60px;
-	border-radius: 100vh;
-	/* 角丸 */
-	background-color: #ffd61a;
-	color: white;
-	font-size: 21px;
-	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
-	transition: .3s ease-out;
-	/* 3秒間で開始時に早く、終了時にゆっくり変化させる */
-}
-
-/* 「MORE」ボタンクリック時 */
-#more:hover {
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 3px 10px 0 rgba(0, 0, 0, 0.12), 0 4px 7px -2px rgba(0, 0, 0, 0.2);
-	transform: translateY(-4px);
-	/* 上（Y）方向に4px動かす */
 }
 
 /* 「ACCESS」セクション全体 */
