@@ -7,7 +7,6 @@ body {
 	line-height: 1.8;
 }
 
-
 /* パディングをサイズ内側にする処理 */
 * {
 	padding: 0;
@@ -39,7 +38,7 @@ h2 {
 	width: 100%;
 	padding: 0px 20px;
 	border: 1px #040D64 solid;
-	line-height: 80px;
+	line-height: 100px;
 	display: flex;
 	justify-content: left;
 	align-items: center;
@@ -54,7 +53,7 @@ h2 {
 
 /* ヘッダーのロゴ */
 .header img {
-	width: 80px;
+	width: 100px;
 }
 
 /* ヘッダーのテキストの箱 */
@@ -86,7 +85,7 @@ h2 {
 /* 「お問い合わせ」ボタン詳細 */
 #header_inquiry {
 	width: 230px;
-	height: 53px;
+	height: 60px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -128,11 +127,17 @@ h2 {
 }
 
 #top_image_text p {
+	font-size: 25px;
+}
+
+#top_image_text h1 {
 	font-size: 50px;
+	letter-spacing: 0.08em;
+	text-shadow: 1px 1px 1px #DDDBDB;
 }
 
 /* Growth Upプログラム */
-#top_tittle {
+#top_title {
 	margin-left: 40px;
 	height: 45%;
 	color: #fdfbfb;
@@ -142,7 +147,7 @@ h2 {
 
 /* 問題提起セクション */
 .problem {
-	margin-top: 80px;
+	margin: 150px 0;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -154,6 +159,10 @@ h2 {
 	background: linear-gradient(transparent 30%, #91dceb 0%);
 	text-underline-position: above;
 	line-height: 0.8;
+}
+
+#problem_title {
+	margin-bottom: 40px;
 }
 
 .problem ul {
@@ -168,26 +177,26 @@ h2 {
 
 /* ▼ */
 .dli-caret-down {
-	margin: 80px 0;
+	margin-top: 150px;
 	vertical-align: middle;
 	color: #040D64;
 	border-style: solid;
 	border-color: transparent;
-	border-width: 3.84952em 2.875em;
+	border-width: 5.84952em 4.575em;
 	border-top-color: currentColor;
 	border-bottom: 0;
 	border-radius: 5px;
 }
 
 /* 解決方法 */
-#solution_tittle {
-	margin-bottom: 30px;
+#solution_title {
+	margin-bottom: 50px;
 	display: flex;
 	justify-content: center;
 }
 
 /* タイトルにアンダーライン */
-.solution h2 {
+#solution_title h2 {
 	width: fit-content;
 	background: linear-gradient(transparent 30%, #91dceb 0%);
 	text-underline-position: above;
@@ -252,8 +261,8 @@ h2 {
 	flex-direction: column;
 	justify-content: center;
 	border-radius: 7px;
-	background-color: rgb(248, 243, 243);
-	box-shadow: inset 0px 0px 25px 1px rgba(0, 0, 0, 0.23);
+	/* background-color: rgb(248, 243, 243); */
+	/* box-shadow: inset 0px 0px 25px 1px rgba(0, 0, 0, 0.23); */
 }
 
 /* テキスト共通 */
@@ -269,6 +278,7 @@ h2 {
 
 /* セミナー内容紹介セクション */
 #seminor {
+	margin-top: 100px;
 	width: 100%;
 	border-top: 3px #DDDBDB solid;
 	display: flex;
@@ -277,8 +287,8 @@ h2 {
 }
 
 /* タイトル */
-#seminor_tittle {
-	margin-top: 40px;
+#seminor_title {
+	margin-top: 100px;
 	display: flex;
 	color: #123474;
 }
@@ -292,9 +302,9 @@ h2 {
 
 /* 土台のBOX */
 #seminor_box {
-	margin-top: 20px;
+	margin: 70px 0;
 	width: 100%;
-	height: 580px;
+	height: 700px;
 	display: flex;
 	justify-content: center;
 }
@@ -312,7 +322,7 @@ h2 {
 
 /* アイコンを表示するためのBOX */
 .seminor_contents_icon_box {
-	padding: 30px 0;
+	padding: 40px 0;
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -328,11 +338,12 @@ h2 {
 }
 
 .seminor_contents h3 {
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 	font-size: 30px;
 }
 
 .seminor_contents li {
+	margin-bottom: 7px;
 	color: #555555;
 }
 
@@ -354,7 +365,8 @@ h2 {
 
 /* ループ画像を作る */
 .loop_img {
-	margin-top: 100px;
+	margin-top: 150px;
+	margin-bottom: 120px;
 	display: flex;
 	overflow: hidden;
 }
@@ -417,32 +429,32 @@ h2 {
 
 /* 「COURSE」を上下に4分割した内の一番上 */
 #course {
-	padding: 80px;
+	margin: 100px 0;
+	padding: 150px 0;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	background-image: linear-gradient(90deg, rgba(38, 115, 199, 1), #005272);
+	color: #ffffff;
 	/* background-color: #005272; */
 }
 
 #course h2 {
 	margin: 0;
-	color: #ffffff;
 	vertical-align: middle;
 }
 
 /* 「COURSE」 */
 .course_grid_box {
-	margin-top: 50px;
+	margin: 50px 0;
 	width: 63%;
 	display: grid;
 	grid-template-rows: 70px 70px 70px 70px 70px;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
-	color: #ffffff;
 }
 
-.course_tittle {
+.course_title {
 	display: flex;
 	border-bottom: 4px #fdfbfb solid;
 	justify-content: center;
@@ -459,15 +471,14 @@ h2 {
 
 /* 「お客様の声」全体 */
 .voice {
-	margin-bottom: 20px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
 
-#voice_tittle {
-	margin: 60px 0 30px;
+#voice_title {
+	margin-bottom: 50px;
 	color: #123474;
 }
 
@@ -485,6 +496,7 @@ h2 {
 	margin: 20px;
 	padding: 60px 25px;
 	width: calc(100% / 3);
+	border: 3px #040D64 solid;
 	border-radius: 20px;
 	cursor: pointer;
 	transition: .3s ease-out;
@@ -534,225 +546,13 @@ h2 {
 	line-height: 1.5;
 }
 
-/* 「CONTACT」セクション全体	 */
-.contact {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-.contact_tittle {
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	font-size: 24px;
-	color: #811414;
-	background-color: #cfbcbc;
-}
-
-/* フォームの背景つける */
-.form {
-	padding: 30px 0px 70px;
-	width: 60%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	background-color: #fafafa;
-	box-shadow: 1px 1px 20px -15px;
-}
-
-
-/* 入力フォーム */
-.form_tittle {
-	padding-bottom: 10px;
-	width: 650px;
-	text-align: center;
-	font-size: 21px;
-}
-
-/* フォーム全体 */
-#form {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
-/* 名前（カナ）のlabel */
-.form_name label {
-	margin-right: 200px;
-}
-
-/* 名前（カナ）のinput */
-.form_name input {
-	margin: 12px 0px;
-	width: 328px;
-	height: 36px;
-	border: 2px #bfbfbf solid;
-	border-radius: 5px;
-	background-color: white;
-}
-
-/* メールアドレスのlabel */
-.form_email label {
-	margin-right: 120px;
-}
-
-/* メールアドレスのinput */
-.form_email input {
-	margin: 12px 0px;
-	width: 328px;
-	height: 36px;
-	border: 2px #bfbfbf solid;
-	border-radius: 5px;
-	background-color: white;
-}
-
-/* 「志望動機」全体 */
-.form_motivation {
-	display: flex;
-	margin-top: 28px;
-}
-
-/* 「志望動機」の文字 */
-#form_motivation {
-	margin-right: 176px;
-	margin-left: 105px;
-}
-
-/* 「志望動機」テキスト */
-#form_checkbox p {
-	margin-left: 40px;
-	margin-bottom: 24px;
-	cursor: pointer;
-}
-
-/* チェックボックスとテキスト */
-.form_checkbox_text {
-	display: flex;
-}
-
-/* チェックボックス */
-input.form_checkbox[type="checkbox"] {
-	position: relative;
-	width: 24px;
-	height: 24px;
-	display: inline-block;
-	border-radius: 5px;
-	border: 2px solid #cac6c2;
-	background: #cac6c2;
-	cursor: pointer;
-	appearance: none;
-}
-
-input.form_checkbox[type="checkbox"]:checked::before {
-	position: absolute;
-	width: 24px;
-	height: 24px;
-	content: '';
-	display: block;
-	border-radius: 5px;
-	border: 2px #ffd61a solid;
-	left: -2px;
-	margin-top: -2px;
-	background: #ffd61a;
-}
-
-input.form_checkbox[type=checkbox]:checked::after {
-	position: absolute;
-	width: 9px;
-	border-bottom: 4px solid #811414;
-	height: 16px;
-	border-right: 4px solid #811414;
-	border-radius: 4px;
-	content: '';
-	display: block;
-	left: 6px;
-	transform: rotate(45deg);
-}
-
-/* 「詳細」全体 */
-.form_text {
-	padding: 8px 0px 40px;
-	display: flex;
-}
-
-/* 「詳細」のlabel */
-.form_text label {
-	margin-right: 200px;
-}
-
-/* 「詳細」のtextarea */
-.form_text textarea {
-	padding: 10px;
-	border: 2px #bfbfbf solid;
-	border-radius: 5px;
-	width: 328px;
-	height: 108px;
-	line-height: 1.25;
-	background-color: white;
-}
-
-/* 「CONTACT」ボタンの箱 */
-.form_button {
-	display: flex;
-}
-
-/* 送信ボタン */
-#form_send_button {
-	margin: 0px 35px;
-	width: 240px;
-	height: 60px;
-	font-size: 19px;
-	color: #811414;
-	border: 1px #ffd61a solid;
-	border-radius: 15px;
-	background-color: #ffd61a;
-	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
-	transition: .2s ease-out;
-	/* 3秒間で開始時に早く、終了時にゆっくり変化させる */
-	cursor: pointer;
-}
-
-/* カーソルを合わせた時 */
-#form_send_button:hover {
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 3px 10px 0 rgba(0, 0, 0, 0.12), 0 4px 7px -2px rgba(0, 0, 0, 0.2);
-	transform: translateY(-2px);
-	/* 上（Y）方向に4px動かす */
-	/* color: black; */
-	text-shadow: 2px 2px 0px #ffd61a;
-	border-color: #811414;
-	background-image: url(../img/send-button.png);
-}
-
-/* リセットボタン */
-#form_reset_button {
-	margin: 0px 35px;
-	width: 240px;
-	height: 60px;
-	border-radius: 15px;
-	color: white;
-	font-size: 18px;
-	border: 1px #c7c5c5 solid;
-	background-color: #c7c5c5;
-	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
-	transition: .3s ease-out;
-	/* 3秒間で開始時に早く、終了時にゆっくり変化させる */
-	cursor: pointer;
-}
-
-/* カーソルを合わせた時 */
-#form_reset_button:hover {
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 3px 10px 0 rgba(0, 0, 0, 0.12), 0 4px 7px -2px rgba(0, 0, 0, 0.2);
-	transform: translateY(-1px);
-	/* 上（Y）方向に4px動かす */
-}
-
 /* 「会社概要」セクション全体 */
 #prof {
-	margin: 50px 5% 0;
+	margin-top: 100px;
+	padding: 150px 5% 100px;
 	display: flex;
 	justify-content: center;
+	background-color: #040D64;
 }
 
 .prof_main_box {
@@ -838,8 +638,24 @@ input.form_checkbox[type=checkbox]:checked::after {
 	justify-content: center;
 }
 
+/* フッター */
+.footer {
+	padding-left: 20%;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	background-color: #040D64;
+	color: #ffffff;
+}
+
+.footer p {
+	width: 80%;
+	text-align: center;
+}
+
 /* 「トップへ戻る」ボタンの箱 */
 .to_top_button_box {
+	width: 20%;
 	display: flex;
 	justify-content: end;
 }
@@ -886,18 +702,4 @@ input.form_checkbox[type=checkbox]:checked::after {
 	line-height: 55px;
 	box-shadow: 0 3px 8px 0px rgba(0, 0, 0, 0.35);
 	transform: translate(-1%, -3%);
-}
-
-/* フッター */
-.footer {
-	height: 100px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: #040D64;
-	color: #ffffff;
-}
-
-.footer p {
-	
 }

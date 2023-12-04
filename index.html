@@ -35,7 +35,7 @@
             <a href="#voice">お客様の声</a>
             <a href="#prof">会社概要</a>
             <div id="header_inquiry">
-                <a href="#contact">お問い合わせ</a>
+                <a href="./second.html" target="_blank">お問い合わせ</a>
             </div>
         </nav>
     </header>
@@ -43,19 +43,21 @@
     <!-- トップ画像セクション -->
     <div class="top_image">
         <div id="top_image_text">
-            <h1>オンラインでも大人数の集合研修でもない、</h1>
-            <p>少人数で行う講師訪問型の</p>
-            <p>会計税務研修</p>
+            <p>オンラインでも大人数の集合研修でもない、</p>
+            <h1>少人数で行う講師訪問型の
+                <br>
+                会計税務研修
+            </h1>
         </div>
         <div>
-            <p id="top_tittle">Growth Upプログラム</p>
+            <p id="top_title">Growth Upプログラム</p>
         </div>
     </div>
 
     <main>
         <!-- 問題提起セクション -->
         <section class="problem">
-            <div>
+            <div id="problem_title">
                 <h2 class="under_bar">会計事務所の皆様</h2>
                 <h2>こんなお悩みありませんか？？</h2>
             </div>
@@ -69,8 +71,8 @@
         </section>
 
         <!-- 解決方法提案セクション -->
-        <section class="solution">
-            <div id="solution_tittle">
+        <section>
+            <div id="solution_title">
                 <h2 class="under_bar">Growth Upプログラムで実現できること</h2>
             </div>
 
@@ -102,18 +104,19 @@
                 </div>
                 <div class="solution_text_box">
                     <h3>実務に寄り添ったカリキュラム</h3>
-                    <p>年間100件以上の法人申告書作成に関与してきた経験をもとに<span class="text_appeal">一から作り上げたカリキュラム</span>であるため、<b>より実務的な知識が1日で身に付く</b></p>
+                    <p><span class="text_appeal">年間100件以上</span>の法人申告書作成に関与してきた経験をもとに<span
+                            class="text_appeal">一から作り上げたカリキュラム</span>であるため、<b>より実務的な知識が1日で身に付く</b></p>
                 </div>
             </div>
         </section>
 
         <div class="inquiry_box">
-            <button type="button" onclick="location.href='#contact'" class="inquiry">お問い合わせはこちら</button>
+            <button type="button" onclick="window.open('./second.html')" class="inquiry">お問い合わせはこちら</button>
         </div>
 
         <!-- 研修内容詳細 -->
         <section id="seminor">
-            <div id="seminor_tittle">
+            <div id="seminor_title">
                 <h2>研修内容</h2>
                 <p>　※ 例示</p>
             </div>
@@ -184,17 +187,17 @@
 
         <!-- お問い合わせボタン -->
         <div class="inquiry_box">
-            <button type="button" onclick="location.href='#contact'" class="inquiry">お問い合わせはこちら</button>
+            <button type="button" onclick="window.open('./second.html')" class="inquiry">研修のご依頼はこちら</button>
         </div>
 
         <!-- 料金セクション -->
         <section id="course">
             <h2>研修料金表</h2>
             <div class="course_grid_box">
-                <h3 class="course_tittle">Plan</h3>
-                <h3 class="course_tittle">対象人数</h3>
-                <h3 class="course_tittle">料金（税抜）</h3>
-                <h3 class="course_tittle">研修時間</h3>
+                <h3 class="course_title">Plan</h3>
+                <h3 class="course_title">対象人数</h3>
+                <h3 class="course_title">料金（税抜）</h3>
+                <h3 class="course_title">研修時間</h3>
                 <div>ミニプラン</div>
                 <div>～ 10人</div>
                 <div>150,000円</div>
@@ -202,20 +205,21 @@
                 <div>スモールプラン</div>
                 <div>11 ～ 20人</div>
                 <div>290,000円</div>
-                <div>10時 ～ 18時 × ２日</div>
+                <div>10時 ～ 18時 × ２日※</div>
                 <div>ミドルプラン</div>
                 <div>21 ～ 30人</div>
                 <div>420,000円</div>
-                <div>10時 ～ 18時 × ３日</div>
+                <div>10時 ～ 18時 × ３日※</div>
                 <div>ラージプラン</div>
                 <div>31人 ～</div>
                 <div>別途お見積もり</div>
             </div>
+            <p>※事前にグループ分けを行い、各グループ１日ずつの研修を実施いたします</p>
         </section>
 
         <!-- お客様の声 -->
         <section id="voice" class="voice">
-            <h2 id="voice_tittle">お客様の声</h2>
+            <h2 id="voice_title">お客様の声</h2>
             <div class="voice_main_box">
                 <div class="voice_triple_box">
                     <div class="voice_icon_box">
@@ -260,69 +264,10 @@
             </div>
         </section>
 
-        <section id="contact" class="contact">
-            <a class="contact_tittle">
-                <div></div>
-                <h3>CONTACT</h3>
-            </a>
-            <p class="margin_fit">説明会お申し込み・お問い合わせ</p>
-            <p>ぜひ1度、足を運んでみませんか。説明会は随時開催中。</p>
-            <p>その他、お問い合わせもお気軽にどうぞ。お待ちしております。</p>
-            <p id="padding_top_32">※チーズアカデミーは実際には存在しません。</p>
-            <p id="padding_bottom_80">間違っても問い合わせしないようお願いいたします。</p>
-            <!-- お問い合わせフォーム -->
-            <div class="form">
-                <p class="form_tittle">入力フォーム</p>
-                <form action="" method="post" id="form"> <!-- セキュリティの問題があるためactionに送信パスは指定しない -->
-                    <div class="form_name">
-                        <label for="name">名前</label>
-                        <input type="text" id="name" name="name" placeholder="　山田　太郎">
-                    </div>
-                    <div class="form_name">
-                        <label for="name_kana">カナ</label>
-                        <input type="text" id="name_kana" name="name_kana" placeholder="　ヤマダ　タロウ">
-                    </div>
-                    <div class="form_email">
-                        <label for="email">メールアドレス</label>
-                        <input type="email" id="email" name="email" multiple placeholder="　i_love_cheese@cheese.com" />
-                        <!-- multiple：形式と一致しなければエラーを出す -->
-                    </div>
-                    <div class="form_motivation">
-                        <p id="form_motivation">志望動機</p>
-                        <div id="form_checkbox">
-                            <label for="form_motivation_1" class="form_checkbox_text">
-                                <input type="checkbox" class="form_checkbox" id="form_motivation_1" name="fast"
-                                    value="1">
-                                <p>起業したい</p>
-                            </label>
-                            <label for="form_motivation_2" class="form_checkbox_text">
-                                <input type="checkbox" class="form_checkbox" id="form_motivation_2" name="second"
-                                    value="2">
-                                <p>チーズ系企業に就職・転職したい</p>
-                            </label>
-                            <label for="form_motivation_3" class="form_checkbox_text">
-                                <input type="checkbox" class="form_checkbox" id="form_motivation_3" name="third"
-                                    value="3">
-                                <p>チーズと関わる仕事をしており、仕事に活かしたい</p>
-                            </label>
-                            <label for="form_motivation_4" class="form_checkbox_text">
-                                <input type="checkbox" class="form_checkbox" id="form_motivation_4" name="forth"
-                                    value="4">
-                                <p>チーズの教養を身につけたい</p>
-                            </label>
-                        </div>
-                    </div>
-                    <div class="form_text">
-                        <label for="text">詳細</label>
-                        <textarea name="text" id="text" cols="30" rows="10" placeholder="チーズに掛ける思いが人一倍強い。"></textarea>
-                    </div>
-                    <div class="form_button">
-                        <input type="submit" id="form_send_button" name="send" value="送　信">
-                        <input type="reset" id="form_reset_button" name="reset" value="リセット">
-                    </div>
-                </form>
-            </div>
-        </section>
+        <!-- お問い合わせボタン -->
+        <div class="inquiry_box">
+            <button type="button" onclick="window.open('./second.html')" class="inquiry">研修のご依頼はこちら</button>
+        </div>
 
         <section id="prof">
             <div class="prof_main_box">
@@ -372,6 +317,10 @@
                 </div>
             </div>
         </section>
+    </main>
+
+    <footer class="footer">
+        <p>Thank you!!</p>
 
         <div class="to_top_button_box">
             <button type="button" onclick="location.href='#'" class="to_top_button">
@@ -379,13 +328,9 @@
             </button>
             <!-- 別パターン -->
             <!-- <div id="page-top">
-                <a href="#">TOP</a>
-            </div> -->
+                        <a href="#">TOP</a>
+                    </div> -->
         </div>
-
-    </main>
-    <footer class="footer">
-        <p>Thank you!!</p>
     </footer>
 </body>
 
