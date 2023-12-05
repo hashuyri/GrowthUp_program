@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>株式会社シルヴェストリス | 入力フォーム</title>
+    <title>Growth Upプログラム | 入力フォーム</title>
     <link rel="icon" href="./img/corporatelogo_color.png">
     <link rel="stylesheet" type="text/css" href="css/second.css" />
 </head>
@@ -24,42 +24,60 @@
     </button>
 
     <div id="main_box">
-        <div id="request_form">
-            <div>
-                <h2>ご依頼後の流れ</h2>
+        <div id="contact">
+            <h2>ご依頼後の流れ</h2>
+            <div id="contact_flow">
+                <p>ご依頼</p>
+                <span class="dli-caret-circle-fill-right"></span>
+                <p>事前打ち合わせ</p>
+                <span class="dli-caret-circle-fill-right"></span>
+                <p>日程調整</p>
+                <span class="dli-caret-circle-fill-right"></span>
+                <p>ご入金</p>
+                <span class="dli-caret-circle-fill-right"></span>
+                <p>研修実施</p>
             </div>
 
             <h2>研修ご依頼フォーム</h2>
             <!-- グーグルフォームと接続 -->
-            <form class="contact"
+            <form id="contact_form"
                 action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfwXEU3G0mYwn1Cf4yGIH_MoORebPAh-ctuGZUuBuQhGJk5SQ/formResponse"
                 method="post" target="hidden_iframe" onsubmit="submitted=true;">
-
                 <!-- 「entry.・・・」グーグルフォームのコンテンツと紐づけ -->
                 <div class="contact_list">
                     <div class="contact_item">
-                        <label for="union_name">事務所名称<span>必須</span></label>
-                        <input type="text" name="entry.1262940197" id="union_name" placeholder="税務太郎税理士事務所" required />
+                        <label for="contact_union_name" class="contact_five_text">事務所名称</label>
+                        <span class="contact_mast_items">必須</span>
+                        <input type="text" name="entry.1262940197" id="contact_union_name" placeholder="税務太郎税理士事務所"
+                            required />
                     </div>
                     <div class="contact_item">
-                        <label for="ceo_name">代表者氏名<span>必須</span></label>
-                        <input type="text" name="entry.1808267043" id="ceo_name" placeholder="税務　太郎" required />
+                        <label for="contact_ceo_name" class="contact_five_text">代表者氏名</label>
+                        <span class="contact_mast_items">必須</span>
+                        <input type="text" name="entry.1808267043" id="contact_ceo_name" placeholder="税務　太郎" required />
                     </div>
                     <div class="contact_item">
-                        <label for="tel">お電話番号<span>必須</span></label>
-                        <input type="tel" name="entry.1243827433" id="tel" placeholder="000-123-4567" required />
+                        <label for="contact_tel" class="contact_five_text">お電話番号</label>
+                        <span class="contact_mast_items">必須</span>
+                        <input type="tel" name="entry.1243827433" id="contact_tel" placeholder="000-123-4567"
+                            required />
                     </div>
                     <div class="contact_item">
-                        <label for="mail">メールアドレス<span>必須</span></label>
-                        <input type="email" name="emailAddress" id="mail" placeholder="sample@gmail.com" required />
+                        <label for="contact_mail">メールアドレス</label>
+                        <span class="contact_mast_items">必須</span>
+                        <input type="email" name="emailAddress" id="contact_mail" placeholder="sample@gmail.com"
+                            required />
                     </div>
                     <div class="contact_item">
-                        <label for="requester_name">ご依頼者氏名（代表者以外の場合）<span>任意</span></label>
-                        <input type="text" name="entry.2107322284" id="requester_name" placeholder="研修　花子" required />
+                        <label for="contact_requester_name" class="contact_six_text">ご依頼者氏名</label>
+                        <span class="contact_mast_items">必須</span>
+                        <input type="text" name="entry.2107322284" id="contact_requester_name" placeholder="研修　花子"
+                            required />
                     </div>
                     <div class="contact_item">
-                        <label for="nump">研修ご希望人数<span>必須</span></label>
-                        <select name="entry.1498476993" id="nump">
+                        <label for="contact_nump">研修ご希望人数</label>
+                        <span class="contact_mast_items">必須</span>
+                        <select name="entry.1498476993" id="contact_nump">
                             <option>選択してください</option>
                             <option>～ 10人</option>
                             <option>11人 ～ 20人</option>
@@ -67,34 +85,76 @@
                             <option>31人 ～</option>
                         </select>
                     </div>
-                    <div class="contact_item">
-                        <label for="date">研修実施ご希望日（目安）<span>必須</span></label>
-                        <input type="date" name="entry.189109333" id="date" placeholder="" required />
+                    <div id="contact_date_box" class="contact_item">
+                        <div>
+                            <label for="contact_date" class="contact_six_text">研修ご希望日</label>
+                            <span class="contact_mast_items">必須</span>
+                            <input type="date" name="entry.189109333" id="contact_date" placeholder="" required />
+                        </div>
+                        <p>※目安</p>
                     </div>
-                    <div class="contact_item">
-                        <label for="other_text">その他ご要望等<span>任意</span></label>
-                        <textarea name="entry.554276646" id="other_text" cols="70" rows="10" placeholder="お問い合わせ内容"
+                    <div id="contact_text_box" class="contact_item">
+                        <label for="contact_text">その他ご要望等</label>
+                        <span>任意</span>
+                        <textarea name="entry.554276646" id="contact_text" cols="70" rows="10" placeholder="お問い合わせ内容"
                             required></textarea>
                     </div>
                 </div>
 
-                <div class="submit-btn">
-                    <input type="submit" value="送信" />
+                <div id="contact_submit-btn">
+                    <input type="submit" value="送　信" />
                 </div>
             </form>
 
             <div id="note">
-                <h2>ご留意事項</h2>
-                <p>1．研修代金は、研修開催の１週間前までにご入金をお願いしております。</p>
+                <h3>ご留意事項</h3>
+                <p>1．研修代金は、研修開催１週間前までのご入金をお願いしております。</p>
                 <p>2．10名超のグループ分けが必要になる研修の場合、連続する日付での開催となります。</p>
                 <p>　　※日程確保が難しい場合、別途ご相談の上料金を決定いたします。</p>
             </div>
         </div>
 
-        <iframe
-            src="https://docs.google.com/forms/d/e/1FAIpQLSeCGxG4-g1Rd4Pse7YI8sy0g8BknNibGtVp2TdqcPJeS1rG5w/viewform?embedded=true"
-            width="700" height="1100" frameborder="0" marginheight="0" marginwidth="0" id="inquiry_form">読み込んでいます…
-        </iframe>
+        <div id="inquiry">
+            <div id="inquiry_main">
+                <h2>お問い合わせフォーム</h2>
+                <form id="inquiry_form"
+                    action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeCGxG4-g1Rd4Pse7YI8sy0g8BknNibGtVp2TdqcPJeS1rG5w/formResponse"
+                    method="post" target="hidden_iframe" onsubmit="submitted=true;">
+
+                    <!-- 「entry.・・・」グーグルフォームのコンテンツと紐づけ -->
+                    <div class="inquiry_list">
+                        <div class="inquiry_item">
+                            <label for="inquiry_union_name" class="inquiry_five_text">事務所名称</label>
+                            <span class="inquiry_mast_items_1">必須</span>
+                            <input type="text" name="entry.798966256" id="inquiry_union_name" placeholder="税務太郎税理士事務所"
+                                required />
+                        </div>
+                        <div class="inquiry_item">
+                            <label for="inquiry_requester_name" class="inquiry_three_text">お名前</label>
+                            <span class="inquiry_mast_items_2">必須</span>
+                            <input type="text" name="entry.1648718537" id="inquiry_requester_name" placeholder="税務　太郎"
+                                required />
+                        </div>
+                        <div class="inquiry_item">
+                            <label for="inquiry_mail" class="inquiry_seven_text">メールアドレス</label>
+                            <span class="inquiry_mast_items_3">必須</span>
+                            <input type="email" name="emailAddress" id="inquiry_mail" placeholder="sample@gmail.com"
+                                required />
+                        </div>
+                        <div id="inquiry_text_box" class="inquiry_item">
+                            <label for="inquiry_text">お問い合わせ内容</label>
+                            <span class="inquiry_mast_items_4">必須</span>
+                            <textarea name="entry.820511058" id="inquiry_text" cols="70" rows="10"
+                                placeholder="お問い合わせ内容" required></textarea>
+                        </div>
+                    </div>
+
+                    <div id="inquiry_submit-btn">
+                        <input type="submit" value="送信" />
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -103,14 +163,14 @@
 
         // ご依頼フォームとお問い合わせフォームの切り替え
         $("#form_change_btn").on("click", function () {
-            $("#request_form").toggle();
+            $("#contact").fadeToggle();
             $(this).text("お問い合わせフォームへ");
             $(this).css("background", "linear-gradient(3.72deg, #00723d 0%, rgb(102, 199, 38) 100%)");
             $(".toggleorder_header").css("background-color", "#f5673c");
             $(this).toggleClass("toggleorder_btn");
             $("header").toggleClass("toggleorder_header");
 
-            $("#inquiry_form").toggle();
+            $("#inquiry").fadeToggle();
             $(".toggleorder_btn").text("研修ご依頼フォームへ");
             $(".toggleorder_btn").css("background", "linear-gradient(93.72deg, #E12850 0%, #F5873C 100%)");
             $(".toggleorder_header").css("background-color", "#008648");

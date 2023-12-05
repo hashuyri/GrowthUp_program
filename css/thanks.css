@@ -1,5 +1,10 @@
 body {
+    margin: 0;
+    background-color: #fff9e6;
+    font-size: 21px;
+    font-weight: bold;
     font-family: 'Noto Sans JP', sans-serif;
+    line-height: 1.8;
 }
 
 /* パディングをサイズ内側にする処理 */
@@ -15,4 +20,40 @@ body {
 
 html {
     scroll-behavior: smooth;
+}
+
+#all_text {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#thanks_text {
+    padding: 50px 200px;
+    border: 8px #040D64 solid;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    background-color: #040D64;
+}
+
+#thanks_text h1 {
+    margin-bottom: 30px;
+}
+
+#company_data {
+    margin-top: 50px;
+    width: 60%;
+    display: flex;
+    justify-content: end;
+}
+
+#all_text span {
+    margin-top: 100px;
+    color: #777777;
 }
