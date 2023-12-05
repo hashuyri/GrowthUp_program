@@ -5,11 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>株式会社シルヴェストリス | Thank you</title>
+    <title>Thank you | 株式会社シルヴェストリス</title>
     <link rel="icon" href="./img/corporatelogo_color.png">
     <link rel="stylesheet" type="text/css" href="css/thanks.css" />
 </head>
 
 <body>
+    <div id="all_text">
+        <div id="thanks_text">
+            <h1>送信が完了しました！</h1>
+            <p>２営業日以内にご登録いただいたメールアドレス宛にご連絡いたします</p>
+            <p>今しばらくお待ちくださいませ</p>
+        </div>
+
+        <div id="company_data">
+            <div>
+                <h2>運営会社情報</h2>
+                <u>
+                    <p>株式会社シルヴェストリス</p>
+                    <p>営業日：月 ～ 金（祝日、年末年始除く）</p>
+                    <p>営業時間：10時 ～ 17時</p>
+                </u>
+            </div>
+        </div>
+        <span>このページは数秒後にホームへ戻ります</span>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        setTimeout(() => {
+            location.href = "./index.html"
+        }, 10000);
+    </script>
 
 </body>
