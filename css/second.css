@@ -35,18 +35,19 @@ header {
 header h1 {
     margin: 0;
     font-size: 35px;
+    font-weight: bold;
 }
 
 /* ボタンの箱 */
 #btn_box {
-    margin-right: 2%;
+    margin: 1%;
     display: flex;
     justify-content: end;
 }
 
 /* ヘッダーボタンの装飾等 */
 #form_change_btn {
-    padding: 20px 30px;
+    padding: 0 30px;
     color: #ffffff;
     font-size: 20px;
     font-weight: bold;
