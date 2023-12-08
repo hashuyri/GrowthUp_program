@@ -11,16 +11,19 @@
 
 article,
 aside,
-details, /* 1 */
+details,
+/* 1 */
 figcaption,
 figure,
 footer,
 header,
-main, /* 2 */
+main,
+/* 2 */
 menu,
 nav,
 section,
-summary { /* 1 */
+summary {
+	/* 1 */
 	display: block;
 }
 
@@ -49,7 +52,8 @@ audio:not([controls]) {
  * 1. Add the correct display in IE.
  */
 
-template, /* 1 */
+template,
+/* 1 */
 [hidden] {
 	display: none;
 }
@@ -65,8 +69,10 @@ template, /* 1 */
 *,
 ::before,
 ::after {
-	background-repeat: no-repeat; /* 1 */
-	box-sizing: inherit; /* 2 */
+	background-repeat: no-repeat;
+	/* 1 */
+	box-sizing: inherit;
+	/* 2 */
 }
 
 /**
@@ -76,8 +82,10 @@ template, /* 1 */
 
 ::before,
 ::after {
-	text-decoration: inherit; /* 1 */
-	vertical-align: inherit; /* 2 */
+	text-decoration: inherit;
+	/* 1 */
+	vertical-align: inherit;
+	/* 2 */
 }
 
 /**
@@ -88,12 +96,18 @@ template, /* 1 */
  */
 
 html {
-	box-sizing: border-box; /* 1 */
-	cursor: default; /* 2 */
-	font-family: sans-serif; /* 3 */
-	line-height: 1.5; /* 3 */
-	-ms-text-size-adjust: 100%; /* 4 */
-	-webkit-text-size-adjust: 100%; /* 5 */
+	box-sizing: border-box;
+	/* 1 */
+	cursor: default;
+	/* 2 */
+	font-family: sans-serif;
+	/* 3 */
+	line-height: 1.5;
+	/* 3 */
+	-ms-text-size-adjust: 100%;
+	/* 4 */
+	-webkit-text-size-adjust: 100%;
+	/* 5 */
 }
 
 /* Sections (https://www.w3.org/TR/html5/sections.html)
@@ -129,8 +143,10 @@ code,
 kbd,
 pre,
 samp {
-	font-family: monospace, monospace; /* 1 */
-	font-size: 1em; /* 2 */
+	font-family: monospace, monospace;
+	/* 1 */
+	font-size: 1em;
+	/* 2 */
 }
 
 /**
@@ -139,8 +155,10 @@ samp {
  */
 
 hr {
-	height: 0; /* 1 */
-	overflow: visible; /* 2 */
+	height: 0;
+	/* 1 */
+	overflow: visible;
+	/* 2 */
 }
 
 /**
@@ -161,8 +179,10 @@ nav ul {
  */
 
 abbr[title] {
-	border-bottom: 1px dotted; /* 1 */
-	text-decoration: none; /* 2 */
+	border-bottom: 1px dotted;
+	/* 1 */
+	text-decoration: none;
+	/* 2 */
 }
 
 /**
@@ -224,7 +244,8 @@ small {
 
 sub,
 sup {
-	font-size: 83.3333%; /* 1 */
+	font-size: 83.3333%;
+	/* 1 */
 	line-height: 0;
 	position: relative;
 	vertical-align: baseline;
@@ -244,14 +265,18 @@ sup {
  */
 
 ::-moz-selection {
-	background-color: #b3d4fc; /* 1 */
-	color: #000000; /* 1 */
+	background-color: #b3d4fc;
+	/* 1 */
+	color: #000000;
+	/* 1 */
 	text-shadow: none;
 }
 
 ::selection {
-	background-color: #b3d4fc; /* 1 */
-	color: #000000; /* 1 */
+	background-color: #b3d4fc;
+	/* 1 */
+	color: #000000;
+	/* 1 */
 	text-shadow: none;
 }
 
@@ -304,8 +329,10 @@ svg:not(:root) {
  */
 
 a {
-	background-color: transparent; /* 1 */
-	-webkit-text-decoration-skip: objects; /* 2 */
+	background-color: transparent;
+	/* 1 */
+	-webkit-text-decoration-skip: objects;
+	/* 2 */
 }
 
 /**
@@ -340,11 +367,16 @@ button,
 input,
 select,
 textarea {
-	background-color: transparent; /* 1 */
-	border-style: none; /* 1 */
-	color: inherit; /* 1 */
-	font-size: 1em; /* 1 */
-	margin: 0; /* 3 */
+	background-color: transparent;
+	/* 1 */
+	border-style: none;
+	/* 1 */
+	color: inherit;
+	/* 1 */
+	font-size: 1em;
+	/* 1 */
+	margin: 0;
+	/* 3 */
 }
 
 /**
@@ -353,7 +385,8 @@ textarea {
  */
 
 button,
-input { /* 1 */
+input {
+	/* 1 */
 	overflow: visible;
 }
 
@@ -363,7 +396,8 @@ input { /* 1 */
  */
 
 button,
-select { /* 1 */
+select {
+	/* 1 */
 	text-transform: none;
 }
 
@@ -374,10 +408,12 @@ select { /* 1 */
  */
 
 button,
-html [type="button"], /* 1 */
+html [type="button"],
+/* 1 */
 [type="reset"],
 [type="submit"] {
-	-webkit-appearance: button; /* 2 */
+	-webkit-appearance: button;
+	/* 2 */
 }
 
 /**
@@ -414,10 +450,14 @@ fieldset {
  */
 
 legend {
-	display: table; /* 1 */
-	max-width: 100%; /* 1 */
-	padding: 0; /* 2 */
-	white-space: normal; /* 1 */
+	display: table;
+	/* 1 */
+	max-width: 100%;
+	/* 1 */
+	padding: 0;
+	/* 2 */
+	white-space: normal;
+	/* 1 */
 }
 
 /**
@@ -426,8 +466,10 @@ legend {
  */
 
 textarea {
-	overflow: auto; /* 1 */
-	resize: vertical; /* 2 */
+	overflow: auto;
+	/* 1 */
+	resize: vertical;
+	/* 2 */
 }
 
 /**
@@ -454,8 +496,10 @@ textarea {
  */
 
 [type="search"] {
-	-webkit-appearance: textfield; /* 1 */
-	outline-offset: -2px; /* 2 */
+	-webkit-appearance: textfield;
+	/* 1 */
+	outline-offset: -2px;
+	/* 2 */
 }
 
 /**
@@ -482,8 +526,10 @@ textarea {
  */
 
 ::-webkit-file-upload-button {
-	-webkit-appearance: button; /* 1 */
-	font: inherit; /* 2 */
+	-webkit-appearance: button;
+	/* 1 */
+	font: inherit;
+	/* 2 */
 }
 
 /* WAI-ARIA (https://www.w3.org/TR/html5/dom.html#wai-aria)
@@ -530,7 +576,8 @@ label,
 select,
 textarea,
 [tabindex] {
-	-ms-touch-action: manipulation; /* 1 */
+	-ms-touch-action: manipulation;
+	/* 1 */
 	touch-action: manipulation;
 }
 
