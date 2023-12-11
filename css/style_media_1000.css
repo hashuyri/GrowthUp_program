@@ -1,0 +1,52 @@
+@media screen and (max-width: 1000px) {
+	body {
+		font-size: 18px;
+	}
+
+	h2 {
+		font-size: 35px;
+	}
+
+	.header img {
+		width: 50%;
+	}
+
+	.header nav {
+		font-size: 16px;
+	}
+
+	#header_inquiry {
+		width: 140px;
+		font-size: 15px;
+	}
+
+	#top_image_text p {
+		font-size: 20px;
+	}
+
+	#top_image_text h1 {
+		font-size: 35px;
+	}
+
+	/* Growth Upプログラム */
+	#top_title {
+		font-size: 35px;
+	}
+
+	.text_appeal {
+		font-size: 26px;
+	}
+
+	.loop_img img {
+		height: 200px;
+	}
+
+	.voice_appeal_word {
+		font-size: 26px;
+	}
+
+	.to_top_button {
+		width: 60px;
+		height: 60px;
+	}
+}
