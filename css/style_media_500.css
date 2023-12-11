@@ -39,6 +39,10 @@
 		font-size: 12px;
 	}
 
+	.solution_text_box {
+		padding: 0 22%;
+	}
+
 	.inquiry {
 		font-size: 15px;
 	}

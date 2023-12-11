@@ -37,6 +37,14 @@
 		font-size: 26px;
 	}
 
+	.solution_text_box {
+		padding: 0 18%;
+	}
+
+	.seminar_contents h3 {
+		font-size: 25px;
+	}
+
 	.loop_img img {
 		height: 200px;
 	}
