@@ -1,0 +1,110 @@
+@media screen and (max-width: 1300px) {
+	body {
+		font-size: 22px;
+	}
+
+	h2 {
+		font-size: 40px;
+	}
+
+	.header nav {
+		font-size: 19px;
+	}
+
+	#header_inquiry {
+		width: 170px;
+		font-size: 19px;
+	}
+
+	#top_image_text p {
+		font-size: 25px;
+	}
+
+	#top_image_text h1 {
+		font-size: 50px;
+	}
+
+	/* Growth Upプログラム */
+	#top_title {
+		font-size: 50px;
+	}
+
+	.text_appeal {
+		font-size: 32px;
+	}
+
+	.solution_box {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	#solution_box_geek {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column-reverse;
+	}
+
+	.solution_text_box {
+		margin-top: 1%;
+		margin-bottom: 4%;
+		padding: 0 10%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#seminar_box {
+		padding: 0 10%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.seminar_contents {
+		margin: 5% 0;
+		padding: 0 5%;
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	.seminar_contents h3 {
+		font-size: 30px;
+	}
+
+	.seminar_contents ul {
+		margin-bottom: 0;
+	}
+}
+
+
+@media screen and (max-width: 1300px) {
+	.voice_main_box {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.voice_triple_box {
+		margin-bottom: 5%;
+		padding: 4%;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.voice_text {
+		margin-left: 6%;
+	}
+
+	.voice_customer {
+		margin: 0;
+	}
+}
