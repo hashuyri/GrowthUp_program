@@ -518,9 +518,12 @@ h2 {
 }
 
 .voice_customer {
-	margin-bottom: 8%;
 	color: #040D64;
 	text-align: center;
+}
+
+.voice_text {
+	margin-top: 8%;
 }
 
 .voice_appeal_word {
