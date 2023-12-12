@@ -47,9 +47,13 @@
 		font-size: 15px;
 	}
 
+	.seminar_contents {
+		width: 62%;
+	}
+
 	.seminar_contents_icon {
-		width: 100px;
-		height: 100px;
+		width: 90px;
+		height: 90px;
 		background-position: center;
 		background-size: 100%;
 	}
@@ -60,6 +64,19 @@
 
 	.loop_img img {
 		height: 100px;
+	}
+
+	.course_plan_box h3 {
+		margin-bottom: 0;
+		font-size: 12px;
+	}
+
+	.course_price {
+		font-size: 12px;
+	}
+
+	.course_contents_line small {
+		font-size: 4px;
 	}
 
 	.voice_triple_box:hover {
