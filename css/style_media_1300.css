@@ -1,10 +1,14 @@
 @media screen and (max-width: 1300px) {
 	body {
-		font-size: 22px;
+		font-size: 21px;
 	}
 
 	h2 {
 		font-size: 40px;
+	}
+
+	h3{
+		font-size: 30px;
 	}
 
 	.header nav {
@@ -98,7 +102,6 @@
 	}
 
 	.seminar_contents h3 {
-		font-size: 30px;
 		color: #ffffff;
 	}
 
@@ -109,10 +112,6 @@
 	.seminar_contents li {
 		margin-bottom: 0;
 		color: #ffffff;
-	}
-
-	.course_plan_box h3 {
-		font-size: 30px;
 	}
 
 	.course_price {
