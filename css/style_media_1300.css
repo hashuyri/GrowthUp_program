@@ -58,27 +58,69 @@
 	}
 
 	#seminar_box {
-		padding: 0 10%;
 		display: flex;
-		flex-direction: column;
-		align-items: center;
+		justify-content: left;
+		overflow-x: scroll;
+	}
+
+	#seminar_box::-webkit-scrollbar {
+		height: 14px;
+		/* スクロールバーの高さ */
+	}
+
+	#seminar_box::-webkit-scrollbar-thumb {
+		background: #d2b48c;
+		/* ツマミの色 */
+		border-radius: 7px;
+		/* ツマミ両端の丸み */
+	}
+
+	#seminar_box::-webkit-scrollbar-track {
+		background: #fceed4;
+		/* トラックの色 */
+		border-radius: 3px;
+		/* トラック両端の丸み */
 	}
 
 	.seminar_contents {
-		margin: 5% 0;
-		padding: 0 5%;
-		width: 100%;
+		margin: 2% 1%;
+		padding: 5%;
+		width: 59%;
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
+		background-color: rgb(0, 125, 160);
+		flex-shrink: 0;
+	}
+
+	.seminar_contents_icon_box {
+		padding: 5% 0;
 	}
 
 	.seminar_contents h3 {
 		font-size: 30px;
+		color: #ffffff;
 	}
 
 	.seminar_contents ul {
 		margin-bottom: 0;
+	}
+
+	.seminar_contents li {
+		margin-bottom: 0;
+		color: #ffffff;
+	}
+
+	.course_plan_box h3 {
+		font-size: 30px;
+	}
+
+	.course_price {
+		font-size: 30px;
+	}
+
+	.course_contents_line small {
+		font-size: 12px;
 	}
 }
 
@@ -101,6 +143,7 @@
 	}
 
 	.voice_text {
+		margin-top: 0;
 		margin-left: 6%;
 	}
 

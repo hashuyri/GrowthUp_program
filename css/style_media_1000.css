@@ -37,8 +37,36 @@
 		font-size: 26px;
 	}
 
+	.solution_text_box {
+		padding: 0 18%;
+	}
+
+	.seminar_contents_icon {
+		width: 150px;
+		height: 150px;
+		background-position: center;
+		background-size: 100%;
+	}
+
+	.seminar_contents h3 {
+		font-size: 25px;
+	}
+
 	.loop_img img {
 		height: 200px;
+	}
+
+	.course_plan_box h3 {
+		margin-bottom: 7%;
+		font-size: 25px;
+	}
+
+	.course_price {
+		font-size: 25px;
+	}
+
+	.course_contents_line small {
+		font-size: 10px;
 	}
 
 	.voice_appeal_word {
