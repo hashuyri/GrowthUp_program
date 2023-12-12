@@ -64,6 +64,10 @@
 		height: 150px;
 	}
 
+	#course_contact_flow {
+		border: 2px #ccc solid;
+	}
+
 	.course_main_box::-webkit-scrollbar {
 		height: 7px;
 		/* スクロールバーの高さ */

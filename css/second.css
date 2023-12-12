@@ -1,7 +1,7 @@
 body {
     margin: 0;
     background-color: #fff9e6;
-    font-size: 21px;
+    font-size: 25px;
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: bold;
 }
@@ -21,13 +21,16 @@ html {
     scroll-behavior: smooth;
 }
 
+h2 {
+    font-size: 40px;
+}
+
 header {
-    padding-left: 40px;
+    padding-left: 2%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(255, 86, 35);
-    line-height: 90px;
+    background-color: #040D64;
     color: #fff9e6;
     box-shadow: 0px 10px 10px -6px rgba(0, 0, 0, 0.3);
 }
@@ -40,16 +43,17 @@ header h1 {
 
 /* ボタンの箱 */
 #btn_box {
-    margin: 1%;
+    margin: 1.5%;
+    width: 25%;
     display: flex;
     justify-content: end;
 }
 
 /* ヘッダーボタンの装飾等 */
 #form_change_btn {
-    padding: 0 30px;
+    padding: 7% 0;
+    width: 100%;
     color: #ffffff;
-    font-size: 20px;
     font-weight: bold;
     border: 0;
     border-radius: 50px;
@@ -83,7 +87,7 @@ header h1 {
 /* 「戻る」ボタンテキスト */
 #return_btn p {
     margin: 0;
-    color: #777777;
+    color: #040D64;
     font-size: 20px;
 }
 
@@ -91,141 +95,111 @@ header h1 {
 .dli-arrow-left {
     display: inline-block;
     vertical-align: middle;
-    color: #777777;
+    color: #040D64;
     line-height: 1;
     position: relative;
     width: 1.4em;
-    height: 0.27em;
+    height: 0.2em;
     background: currentColor;
 }
 
 .dli-arrow-left::before {
     content: '';
-    width: 0.85em;
-    height: 0.85em;
-    border: 0.27em solid currentColor;
+    width: 0.8em;
+    height: 0.8em;
+    border: 0.2em solid currentColor;
     border-right: 0;
     border-bottom: 0;
     transform: rotate(-45deg);
     transform-origin: top left;
     position: absolute;
     top: 50%;
-    left: -0.3em;
+    left: -0.1em;
     box-sizing: border-box;
 }
 
 /* アンケートフォーム全体 */
-#main_box {
-    margin-top: 50px;
+#contact_main_box {
+    margin-top: 4%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/* ご依頼フォーム */
-#contact {
+#contact,
+#inquiry_main,
+.form {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-#contact h2 {
-    font-size: 35px;
-}
-
-/* ご依頼後の流れ */
-#contact_flow {
-    margin-top: 40px;
-    margin-bottom: 100px;
-    padding: 40px 100px;
-    display: flex;
-    border: 4px #040D64 solid;
-    align-items: center;
-    color: #ffffff;
-    font-size: 25px;
-    background-color: #040D64;
-}
-
-/* ご依頼後の流れ内の矢印 */
-.dli-caret-circle-fill-right {
-    margin: 0 50px;
-    display: inline-block;
-    vertical-align: middle;
-    color: #00723d;
-    line-height: 1;
-    position: relative;
-    width: 1.5em;
-    height: 1.5em;
-    border: 0.1em solid currentColor;
-    background: currentColor;
-    border-radius: 50%;
-    box-sizing: content-box;
-}
-
-.dli-caret-circle-fill-right::before {
-    content: '';
-    color: #fff9e6;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-color: transparent;
-    border-width: 0.38em 0.61177em;
-    border-left-color: currentColor;
-    border-right: 0;
-    transform: translateX(15%);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
 }
 
 /* アンケートの各要素 */
-.contact_item {
-    margin: 50px 0;
+table {
+    margin: 5% 0 4%;
+    width: 100%;
 }
 
-/* 5文字のテキスト */
-.contact_five_text {
-    letter-spacing: 0.4em;
+tr,
+td {
+    display: flex;
+    align-items: center;
 }
 
-/* 6文字のテキスト */
-.contact_six_text {
-    letter-spacing: 0.16em;
+tr {
+    margin-bottom: 3%;
+}
+
+th {
+    padding-left: 25%;
+    width: 45%;
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    width: 10%;
+}
+
+.input {
+    width: 45%;
+}
+
+th label {
+    display: flex;
+    align-items: center;
 }
 
 /* 「必須」装飾 */
-.contact_mast_items {
-    margin-right: 30px;
-    margin-left: 100px;
-    padding: 3px 12px;
-    border-radius: 10px;
+.mast_items,
+.any_items {
+    padding: 1%;
+    width: 55%;
+    border-radius: 8px;
     color: #fff9e6;
+    text-align: center;
     background-color: rgb(255, 86, 35);
 }
 
 /* アンケート入力欄 */
-.contact_item input {
-    padding: 0 10px;
-    height: 40px;
-    width: 350px;
+.item input {
+    padding: 1%;
+    padding-right: 10%;
     border: 2px #040D64 solid;
     border-radius: 5px;
     font-size: 18px;
 }
 
-.contact_item input:focus {
-    border: none;
-    outline: 3px rgb(255, 86, 35) solid;
+.item input:focus {
+    border: 3px rgb(255, 86, 35) solid;
+    outline: none;
 }
 
 /* ご希望人数プルダウン */
 #contact_nump {
-    padding: 0 10px;
-    height: 40px;
-    width: 200px;
+    padding: 0.7% 1%;
+    padding-right: 10%;
     border: 2px #040D64 solid;
     border-radius: 5px;
     font-size: 18px;
@@ -233,46 +207,33 @@ header h1 {
 }
 
 #contact_nump:focus {
-    border: none;
-    outline: 3px rgb(255, 86, 35) solid;
+    border: 3px rgb(255, 86, 35) solid;
+    outline: none;
 }
 
 /* ご希望日カレンダー */
 #contact_date {
-    width: 200px;
+    padding: 0.7% 2%;
     font-family: 'Noto Sans JP', sans-serif;
     text-align: center;
 }
 
-#contact_date_box {
-    display: flex;
-    align-items: center;
-}
-
 #contact_date_box p {
-    margin-left: 10px;
+    margin-left: 2%;
 }
 
 /* ご要望テキスト */
-#contact_text_box {
-    display: flex;
-    align-items: center;
-}
 
 /* 「任意」装飾 */
-#contact_text_box span {
-    margin-right: 39px;
-    margin-left: 105px;
-    padding: 3px 12px;
-    border-radius: 10px;
+.any_items {
+    color: #212529;
     background-color: #DDDBDB;
 }
 
 /* ご要望入力欄 */
-#contact_text {
-    padding: 10px;
-    height: 200px;
-    width: 500px;
+#contact_text,
+#inquiry_text {
+    padding: 1%;
     border: 2px #040D64 solid;
     border-radius: 5px;
     font-size: 18px;
@@ -286,7 +247,7 @@ header h1 {
 
 /* 送信ボタン */
 #contact_submit-btn {
-    margin: 70px 0;
+    margin-bottom: 5%;
     display: flex;
     justify-content: center;
 }
@@ -299,146 +260,45 @@ header h1 {
     font-weight: bold;
     border: 0;
     border-radius: 50px;
-    background: linear-gradient(3.72deg, #00723d 0%, rgb(102, 199, 38) 100%);
+    background: linear-gradient(3.72deg, #E12850 0%, #F5873C 100%);
     box-shadow: 0px 10px 10px rgb(255, 217, 191);
     cursor: pointer;
 }
 
 #contact_submit-btn input:hover {
-    background: #00723d;
+    background: #E12850;
     box-shadow: none;
     transform: translateY(2px);
 }
 
 /* 留意事項 */
 #note {
-    margin-bottom: 30px;
-    padding: 15px 70px;
+    margin-bottom: 4%;
+    padding: 2% 5%;
     border: 4px #040D64 solid;
     line-height: 1.8;
 }
 
-#note p {
-    font-size: 18px;
-}
-
 /* お問い合わせフォーム */
 #inquiry {
+    width: 100%;
     display: none;
 }
 
-#inquiry_main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#inquiry_main h2 {
-    margin: 40px 0;
-}
-
-/* アンケートの各要素 */
-.inquiry_item {
-    margin: 50px 0;
-}
-
-/* 3文字のテキスト */
-.inquiry_three_text {
-    letter-spacing: 2.5em;
-}
-
-/* 5文字のテキスト */
-.inquiry_five_text {
-    letter-spacing: 0.76em;
-}
-
-/* 6文字のテキスト */
-.inquiry_seven_text {
-    letter-spacing: 0.16em;
-}
-
 /* 「必須」装飾 */
-.inquiry_mast_items_1 {
-    margin-right: 30px;
-    margin-left: 100px;
-    padding: 3px 12px;
-    border-radius: 10px;
-    color: #fff9e6;
+.color_green {
     background-color: #00723d;
 }
 
-/* 「必須」装飾 */
-.inquiry_mast_items_2 {
-    margin-right: 30px;
-    margin-left: 65px;
-    padding: 3px 12px;
-    border-radius: 10px;
-    color: #fff9e6;
-    background-color: #00723d;
-}
-
-/* 「必須」装飾 */
-.inquiry_mast_items_3 {
-    margin-right: 30px;
-    margin-left: 114px;
-    padding: 3px 12px;
-    border-radius: 10px;
-    color: #fff9e6;
-    background-color: #00723d;
-}
-
-/* 「必須」装飾 */
-.inquiry_mast_items_4 {
-    margin-right: 38px;
-    margin-left: 124px;
-    padding: 3px 12px;
-    border-radius: 10px;
-    color: #fff9e6;
-    background-color: #00723d;
-}
-
-/* アンケート入力欄 */
-.inquiry_item input {
-    padding: 0 10px;
-    height: 40px;
-    width: 350px;
-    border: 2px #040D64 solid;
-    border-radius: 5px;
-    font-size: 18px;
-}
-
-.inquiry_item input:focus {
-    border: none;
-    outline: 3px rgb(102, 199, 38) solid;
-}
-
-/* ご要望テキスト */
-#inquiry_text_box {
-    margin-bottom: 50px;
-    display: flex;
-    align-items: center;
-}
-
-/* ご要望入力欄 */
-#inquiry_text {
-    padding: 10px;
-    height: 200px;
-    width: 500px;
-    border: 2px #040D64 solid;
-    border-radius: 5px;
-    font-size: 18px;
-    font-family: 'Noto Sans JP', sans-serif;
-}
-
+.focus_green input:focus,
 #inquiry_text:focus {
-    border: none;
-    outline: 3px rgb(102, 199, 38) solid;
+    border: 3px rgb(102, 199, 38) solid;
+    outline: none;
 }
 
 /* 送信ボタン */
 #inquiry_submit-btn {
-    margin: 100px 0;
+    margin-bottom: 5%;
     display: flex;
     justify-content: center;
 }
@@ -451,13 +311,26 @@ header h1 {
     font-weight: bold;
     border: 0;
     border-radius: 50px;
-    background: linear-gradient(3.72deg, #E12850 0%, #F5873C 100%);
+    background: linear-gradient(3.72deg, #00723d 0%, rgb(102, 199, 38) 100%);
     box-shadow: 0px 10px 10px rgb(255, 217, 191);
     cursor: pointer;
 }
 
 #inquiry_submit-btn input:hover {
-    background: #E12850;
+    background: #00723d;
     box-shadow: none;
     transform: translateY(2px);
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    background-color: #040D64;
+}
+
+footer small {
+    padding: 2% 0;
 }

@@ -362,7 +362,7 @@ h3 {
 	0% {
 		transform: translateX(100%);
 	}
-
+	
 	to {
 		transform: translateX(-100%);
 	}
@@ -372,7 +372,7 @@ h3 {
 	0% {
 		transform: translateX(0);
 	}
-
+	
 	to {
 		transform: translateX(-200%);
 	}
@@ -425,9 +425,51 @@ h3 {
 	color: #ffffff;
 }
 
-#course h2 {
-	margin: 0;
+/* ご依頼後の流れ */
+#course_contact_flow {
+	margin-bottom: 2%;
+	padding: 3% 5%;
+	width: 90%;
+	border: 4px #ccc solid;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #ffffff;
+}
+
+/* ご依頼後の流れ内の矢印 */
+.dli-caret-circle-fill-right {
+	margin: 0 4%;
+	display: inline-block;
 	vertical-align: middle;
+	color: #00723d;
+	line-height: 1;
+	position: relative;
+	width: 1.5em;
+	height: 1.5em;
+	border: 0.1em solid currentColor;
+	background: currentColor;
+	border-radius: 50%;
+	box-sizing: content-box;
+}
+
+.dli-caret-circle-fill-right::before {
+	content: '';
+	color: #ffffff;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-color: transparent;
+	border-width: 0.38em 0.61177em;
+	border-left-color: currentColor;
+	border-right: 0;
+	transform: translateX(15%);
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
 }
 
 /* 「COURSE」 */
@@ -647,6 +689,7 @@ h3 {
 }
 
 #prof_ceo_grid p {
+	padding: 1% 0;
 	padding-left: 8%;
 	display: flex;
 	align-items: center;
@@ -753,7 +796,6 @@ h3 {
 }
 
 .to_top_button:hover {
-	line-height: 55px;
 	box-shadow: 0 3px 8px 0px rgba(0, 0, 0, 0.35);
 	transform: translate(-1%, -3%);
 }
