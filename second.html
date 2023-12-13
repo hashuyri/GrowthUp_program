@@ -32,6 +32,7 @@
     </button>
 
     <main id="contact_main_box">
+        <!-- 研修ご依頼フォーム -->
         <div id="contact">
             <h2>研修ご依頼フォーム</h2>
             <!-- グーグルフォームと接続 -->
@@ -137,8 +138,8 @@
                             <span class="any_items">任意</span>
                         </td>
                         <td class="input">
-                            <textarea name="entry.554276646" id="contact_text" cols="45" rows="7"
-                                placeholder="お問い合わせ内容" required></textarea>
+                            <textarea name="entry.554276646" id="contact_text" cols="45" rows="7" placeholder="お問い合わせ内容"
+                                required></textarea>
                         </td>
                     </tr>
                 </table>
@@ -156,6 +157,7 @@
             </div>
         </div>
 
+        <!-- お問い合わせフォーム -->
         <div id="inquiry">
             <div id="inquiry_main">
                 <h2>お問い合わせフォーム</h2>
@@ -244,10 +246,10 @@
         // ご依頼フォームとお問い合わせフォームの切り替え
         $("#form_change_btn").on("click", function () {
             $("#contact").fadeToggle();
+            // ヘッダーボタン
             $(this).text("お問い合わせフォームへ");
             $(this).css("background", "linear-gradient(3.72deg, #00723d 0%, rgb(102, 199, 38) 100%)");
             $(this).toggleClass("toggleorder_btn");
-            $("header").toggleClass("toggleorder_header");
 
             $("#inquiry").fadeToggle();
             $(".toggleorder_btn").text("研修ご依頼フォームへ");
