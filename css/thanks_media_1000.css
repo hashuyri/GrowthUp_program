@@ -1,0 +1,19 @@
+@media screen and (max-width: 1000px) {
+    body {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    #company_data li,
+    span,
+    small {
+        font-size: 13px;
+    }
+}

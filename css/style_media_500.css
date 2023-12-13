@@ -1,10 +1,14 @@
 @media screen and (max-width: 500px) {
 	body {
-		font-size: 8px;
+		font-size: 7px;
 	}
 
 	h2 {
 		font-size: 15px;
+	}
+
+	h3 {
+		font-size: 12px;
 	}
 
 	.header nav {
@@ -58,17 +62,16 @@
 		background-size: 100%;
 	}
 
-	.seminar_contents h3 {
-		font-size: 12px;
-	}
-
 	.loop_img img {
 		height: 100px;
 	}
 
+	#course_contact_flow {
+		border: 1px #ccc solid;
+	}
+
 	.course_plan_box h3 {
 		margin-bottom: 0;
-		font-size: 12px;
 	}
 
 	.course_price {
@@ -95,8 +98,16 @@
 		font-size: 12px;
 	}
 
+	#prof_ceo_img_box {
+		font-size: 6px;
+	}
+
 	#prof_ceo_grid h3 {
-		font-size: 15px;
+		border-bottom: 1.5px #040D64 solid;
+	}
+
+	#prof_ceo_grid p {
+		border-bottom: 1px #dbdbdb solid;
 	}
 
 	.to_top_button {
