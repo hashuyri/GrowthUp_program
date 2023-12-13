@@ -1,0 +1,25 @@
+@media screen and (max-width: 500px) {
+    body {
+        font-size: 8px;
+    }
+
+    h1 {
+        font-size: 11px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 13px;
+    }
+
+    .input {
+        font-size: 7px;
+    }
+
+    small {
+        font-size: 6px;
+    }
+}

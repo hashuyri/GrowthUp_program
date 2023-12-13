@@ -1,9 +1,12 @@
 body {
     margin: 0;
+    padding-bottom: 10%;
+    min-height: 100vh;
     background-color: #fff9e6;
     font-size: 25px;
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: bold;
+    position: relative;
 }
 
 /* パディングをサイズ内側にする処理 */
@@ -21,8 +24,18 @@ html {
     scroll-behavior: smooth;
 }
 
+h1 {
+    margin: 0;
+    font-size: 35px;
+    font-weight: bold;
+}
+
 h2 {
     font-size: 40px;
+}
+
+h3 {
+    margin-bottom: 2%;
 }
 
 header {
@@ -35,12 +48,6 @@ header {
     box-shadow: 0px 10px 10px -6px rgba(0, 0, 0, 0.3);
 }
 
-header h1 {
-    margin: 0;
-    font-size: 35px;
-    font-weight: bold;
-}
-
 /* ボタンの箱 */
 #btn_box {
     margin: 1.5%;
@@ -51,7 +58,7 @@ header h1 {
 
 /* ヘッダーボタンの装飾等 */
 #form_change_btn {
-    padding: 7% 0;
+    padding: 5% 0;
     width: 100%;
     color: #ffffff;
     font-weight: bold;
@@ -71,24 +78,16 @@ header h1 {
 
 /* 「戻る」ボタンの箱 */
 #return_btn {
-    margin-top: 20px;
-    margin-left: 10px;
-    padding: 0 20px;
+    margin-top: 2%;
+    margin-left: 2%;
     border: 0;
-    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: bold;
-    background-color: #fff9e6;
-    cursor: pointer;
-}
-
-/* 「戻る」ボタンテキスト */
-#return_btn p {
-    margin: 0;
     color: #040D64;
-    font-size: 20px;
+    font-weight: bold;
+    background-color: transparent;
+    cursor: pointer;
 }
 
 /* 「戻る」ボタンの装飾 */
@@ -152,18 +151,22 @@ tr {
 }
 
 th {
-    padding-left: 25%;
-    width: 45%;
+    padding-left: 20%;
+    width: 40%;
     display: flex;
     align-items: center;
 }
 
+/* 「必須」または「任意」 */
 .icon {
     width: 10%;
+    justify-content: center;
 }
 
+/* 入力欄 */
 .input {
-    width: 45%;
+    padding-right: 5%;
+    width: 50%;
 }
 
 th label {
@@ -188,10 +191,11 @@ th label {
     padding-right: 10%;
     border: 2px #040D64 solid;
     border-radius: 5px;
-    font-size: 18px;
 }
 
-.item input:focus {
+.item input:focus,
+#contact_nump:focus,
+#contact_text:focus {
     border: 3px rgb(255, 86, 35) solid;
     outline: none;
 }
@@ -202,13 +206,7 @@ th label {
     padding-right: 10%;
     border: 2px #040D64 solid;
     border-radius: 5px;
-    font-size: 18px;
     text-align: center;
-}
-
-#contact_nump:focus {
-    border: 3px rgb(255, 86, 35) solid;
-    outline: none;
 }
 
 /* ご希望日カレンダー */
@@ -222,8 +220,6 @@ th label {
     margin-left: 2%;
 }
 
-/* ご要望テキスト */
-
 /* 「任意」装飾 */
 .any_items {
     color: #212529;
@@ -236,27 +232,20 @@ th label {
     padding: 1%;
     border: 2px #040D64 solid;
     border-radius: 5px;
-    font-size: 18px;
     font-family: 'Noto Sans JP', sans-serif;
 }
 
-#contact_text:focus {
-    border: none;
-    outline: 3px rgb(255, 86, 35) solid;
-}
-
 /* 送信ボタン */
-#contact_submit-btn {
+.submit-btn {
     margin-bottom: 5%;
     display: flex;
     justify-content: center;
 }
 
-#contact_submit-btn input {
+.submit-btn input {
     height: 70px;
     width: 250px;
     color: #ffffff;
-    font-size: 20px;
     font-weight: bold;
     border: 0;
     border-radius: 50px;
@@ -265,7 +254,7 @@ th label {
     cursor: pointer;
 }
 
-#contact_submit-btn input:hover {
+.submit-btn input:hover {
     background: #E12850;
     box-shadow: none;
     transform: translateY(2px);
@@ -273,8 +262,9 @@ th label {
 
 /* 留意事項 */
 #note {
-    margin-bottom: 4%;
-    padding: 2% 5%;
+    margin: 0 5%;
+    margin-bottom: 5%;
+    padding: 3% 7%;
     border: 4px #040D64 solid;
     line-height: 1.8;
 }
@@ -283,6 +273,10 @@ th label {
 #inquiry {
     width: 100%;
     display: none;
+}
+
+#inquiry h2 {
+    margin-bottom: 2%;
 }
 
 /* 「必須」装飾 */
@@ -297,38 +291,24 @@ th label {
 }
 
 /* 送信ボタン */
-#inquiry_submit-btn {
-    margin-bottom: 5%;
-    display: flex;
-    justify-content: center;
-}
-
 #inquiry_submit-btn input {
-    height: 70px;
-    width: 250px;
-    color: #ffffff;
-    font-size: 20px;
-    font-weight: bold;
-    border: 0;
-    border-radius: 50px;
     background: linear-gradient(3.72deg, #00723d 0%, rgb(102, 199, 38) 100%);
-    box-shadow: 0px 10px 10px rgb(255, 217, 191);
-    cursor: pointer;
 }
 
 #inquiry_submit-btn input:hover {
     background: #00723d;
-    box-shadow: none;
-    transform: translateY(2px);
 }
 
 footer {
+    margin-top: auto;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #ffffff;
     background-color: #040D64;
+    position: absolute;
+    bottom: 0;
 }
 
 footer small {
