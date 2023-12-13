@@ -121,17 +121,14 @@
 	.course_contents_line small {
 		font-size: 12px;
 	}
-}
 
-
-@media screen and (max-width: 1300px) {
 	.voice_main_box {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 	}
-
+	
 	.voice_triple_box {
 		margin-bottom: 5%;
 		padding: 4%;
@@ -140,12 +137,12 @@
 		justify-content: center;
 		align-items: center;
 	}
-
+	
 	.voice_text {
 		margin-top: 0;
 		margin-left: 6%;
 	}
-
+	
 	.voice_customer {
 		margin: 0;
 	}
