@@ -26,11 +26,13 @@
 
 	#top_image_text h1 {
 		font-size: 50px;
+		text-shadow: none;
 	}
 
 	/* Growth Upプログラム */
 	#top_title {
 		font-size: 50px;
+		text-shadow: none;
 	}
 
 	.text_appeal {
