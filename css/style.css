@@ -118,23 +118,24 @@ h3 {
 
 /* mainイメージ */
 .top_image {
+	padding-top: 11%;
 	/* 背景画像のサイズ調整 */
 	width: 100%;
 	/* 縦横比率固定 */
-	aspect-ratio: 1920 / 970;
+	aspect-ratio: 1920 / 1475;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	/* justify-content: center; */
 	align-items: left;
-	background-image: url(../img/main_image.png);
+	background-image: url(../img/main_image.jpg);
 	background-size: 100%;
 }
 
 /* トップ画像のテキスト */
 #top_image_text {
 	margin-left: 5%;
-	height: 40%;
-	color: #fdfbfb;
+	height: 30%;
+	color: #040D64;
 	line-height: 1.4;
 }
 
@@ -147,16 +148,15 @@ h3 {
 #top_image_text h1 {
 	font-size: 65px;
 	letter-spacing: 0.08em;
-	text-shadow: 1px 1px 1px #DDDBDB;
+	text-shadow: 2px 2px #040D64;
 }
 
 /* Growth Upプログラム */
 #top_title {
 	margin-left: 5%;
-	height: 45%;
-	color: #fdfbfb;
+	color: #040D64;
 	font-size: 65px;
-	text-shadow: 2px 2px 2px #040D64;
+	text-shadow: 2px 2px #040D64;
 }
 
 /* 問題提起セクション */
