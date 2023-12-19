@@ -1,0 +1,59 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    font-family: 'Noto Sans JP', sans-serif;
+    line-height: 1.8;
+}
+
+/* パディングをサイズ内側にする処理 */
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+main {
+    margin: 3% 0;
+    padding: 4% 6%;
+    width: 70%;
+    border-radius: 40px;
+    background-color: #f8f8f0;
+}
+
+h1 {
+    margin-bottom: 1%;
+    color: #040D64;
+}
+
+h2 {
+    margin-top: 4%;
+    margin-bottom: 1%;
+    color: #040D64;
+}
+
+#policy_end {
+    margin-top: 4%;
+    text-align: end;
+    color: #040D64;
+    font-weight: bold;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    background-color: #040D64;
+}
+
+footer small {
+    padding: 2% 0;
+}

@@ -1,0 +1,21 @@
+@media screen and (max-width: 700px) {
+    body {
+        font-size: 9px;
+    }
+
+    main {
+        border-radius: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    small {
+        font-size: 7px;
+    }
+}

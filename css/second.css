@@ -139,7 +139,7 @@ header {
 
 /* アンケートの各要素 */
 table {
-    margin: 5% 0 4%;
+    margin: 5% 0 2%;
     width: 100%;
 }
 
@@ -236,6 +236,23 @@ th label {
     border: 2px #040D64 solid;
     border-radius: 5px;
     font-family: 'Noto Sans JP', sans-serif;
+}
+
+.privacy_policy_text {
+    margin-bottom: 4%;
+    display: flex;
+    flex-direction: column;
+    font-weight: 100;
+}
+
+.privacy_policy_text span {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.privacy_policy_text span:hover {
+    color: #040D64;
+    font-weight: bold;
 }
 
 /* 送信ボタン */
