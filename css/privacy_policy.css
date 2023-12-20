@@ -35,7 +35,11 @@ h1 {
 h2 {
     margin-top: 4%;
     margin-bottom: 1%;
+    padding-left: 3%;
+    border-left: 4px #E12850 solid;
     color: #040D64;
+    position: relative;
+    left: -3%;
 }
 
 #policy_end {

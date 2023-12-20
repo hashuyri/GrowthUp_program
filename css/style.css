@@ -764,7 +764,7 @@ h3 {
 	color: #ffffff;
 }
 
-.footer p {
+.footer small {
 	margin-left: 18%;
 	width: 80%;
 	text-align: center;
@@ -772,6 +772,7 @@ h3 {
 
 /* 「トップへ戻る」ボタンの箱 */
 .to_top_button_box {
+	padding-right: 3%;
 	width: 20%;
 	display: flex;
 	justify-content: end;
