@@ -112,8 +112,13 @@ h3 {
 }
 
 /* ヘッダーボタンのテキスト */
-#header_inquiry a {
+#header_inquiry button {
 	color: white;
+	font-weight: bold;
+}
+
+#header_inquiry button:hover {
+	text-decoration: underline;
 }
 
 /* mainイメージ */
