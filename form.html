@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Growth Upプログラム | 入力フォーム</title>
+    <meta name="description" content="依頼者様の事務所に訪問し、法人申告に関する研修を実施します。「1日の研修で8割の企業の申告書が作成できるようになる」を達成するカリキュラムを組んでおります">
+    <meta name="keywords" content="税務研修, 税理士事務所向けセミナー, 税理士法人向けセミナー, 申告書作成, 申告書セミナー">
+    <meta property="og:title" content="株式会社シルヴェストリス | 講師訪問型会計税務研修">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="#" />
+    <meta property="og:site_name" content="株式会社シルヴェストリス | 講師訪問型会計税務研修" />
+    <meta property="og:description"
+        content="依頼者様の事務所に訪問し、法人申告に関する研修を実施します。「1日の研修で8割の企業の申告書が作成できるようになる」を達成するカリキュラムを組んでおります" />
+    <meta name="format-detection" content="telephone=no">
+    <link rel="canonical" href="#">
     <link rel="icon" href="./img/favicon.ico">
     <link rel="shortcut icon" href="./img/favicon.ico">
     <link rel="apple-touch-icon" href="./img/apple-touch-icon.png" sizes="180x180">
@@ -18,6 +28,24 @@
     <link rel="stylesheet" type="text/css" href="css/second_media_1000.css" />
     <link rel="stylesheet" type="text/css" href="css/second_media_700.css" />
     <link rel="stylesheet" type="text/css" href="css/second_media_500.css" />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KET4KHYGJ5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-KET4KHYGJ5');
+    </script>
+
+    <!-- Google tag (gtag.js) event -->
+    <script>
+        gtag('event', 'ads_conversion_SUBMIT_LEAD_FORM_1', {
+            // <event_parameters>
+        });
+    </script>
+
 </head>
 
 <body>
@@ -140,20 +168,23 @@
                             <span class="any_items">任意</span>
                         </td>
                         <td class="input">
-                            <textarea name="entry.554276646" id="contact_text" cols="45" rows="7" placeholder="お問い合わせ内容"
-                                required></textarea>
+                            <textarea name="entry.554276646" id="contact_text" cols="40" rows="7" placeholder="お問い合わせ内容"></textarea>
                         </td>
                     </tr>
                 </table>
 
                 <div class="privacy_policy_text">
-                    <small>
+                    <p>
                         <a type="text" onclick="window.open('./privacy_policy.html')"
                             target="_blank"><span>株式会社シルヴェストリスのプライバシーポリシー</span></a>を必ずご確認ください。
-                    </small>
-                    <small>下記の「送信ボタン」を押すことにより当社のプライバシーポリシーに同意したものとみなします。</small>
+                    </p>
+                    <p>同意いただけましたら以下の『同意する』にチェックを入れてください。</p>
+                    <label for="consent_checkbox" class="privacy_policy_checkbox">
+                        <input type="checkbox" class="consent_checkbox" name="consent" required>
+                        <p>同意する</p>
+                    </label>
                 </div>
-
+                
                 <div id="contact_submit-btn" class="submit-btn">
                     <input type="submit" value="送　信" />
                 </div>
@@ -163,21 +194,21 @@
                 <h3>ご留意事項</h3>
                 <p>1．研修代金は、研修開催１週間前までのご入金をお願いしております。</p>
                 <p>2．10名超のグループ分けが必要になる研修の場合、連続する日付での開催となります。</p>
-                <p>　　※日程確保が難しい場合、別途ご相談の上料金を決定いたします。</p>
+                <p>※日程確保が難しい場合、別途ご相談の上料金を決定いたします。</p>
             </div>
         </div>
-
+        
         <!-- お問い合わせフォーム -->
         <div id="inquiry">
             <div id="inquiry_main">
                 <h2>お問い合わせフォーム</h2>
                 <form id="inquiry_form" class="form"
-                    action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeCGxG4-g1Rd4Pse7YI8sy0g8BknNibGtVp2TdqcPJeS1rG5w/formResponse"
-                    method="post" target="hidden_iframe" onsubmit="submitted=true;">
+                action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeCGxG4-g1Rd4Pse7YI8sy0g8BknNibGtVp2TdqcPJeS1rG5w/formResponse"
+                method="post" target="hidden_iframe" onsubmit="submitted=true;">
 
-                    <!-- 「entry.・・・」グーグルフォームのコンテンツと紐づけ -->
-                    <table>
-                        <tr class="item">
+                <!-- 「entry.・・・」グーグルフォームのコンテンツと紐づけ -->
+                <table>
+                    <tr class="item">
                             <th>
                                 <label for="inquiry_union_name" class="inquiry_five_text">事務所名称</label>
                             </th>
@@ -221,18 +252,22 @@
                                 <span class="mast_items color_green">必須</span>
                             </td>
                             <td class="input">
-                                <textarea name="entry.820511058" id="inquiry_text" cols="50" rows="7"
-                                    placeholder="お問い合わせ内容" required></textarea>
+                                <textarea name="entry.820511058" id="inquiry_text" cols="40" rows="7"
+                                placeholder="お問い合わせ内容" required></textarea>
                             </td>
                         </tr>
                     </table>
-
+                    
                     <div class="privacy_policy_text">
-                        <small>
+                        <p>
                             <a type="text" onclick="window.open('./privacy_policy.html')"
-                                target="_blank"><span>株式会社シルヴェストリスのプライバシーポリシー</span></a>を必ずご確認ください。
-                        </small>
-                        <small>下記の「送信ボタン」を押すことにより当社のプライバシーポリシーに同意したものとみなします。</small>
+                            target="_blank"><span>株式会社シルヴェストリスのプライバシーポリシー</span></a>を必ずご確認ください。
+                        </p>
+                        <p>同意いただけましたら以下の『同意する』にチェックを入れてください。</p>
+                        <label for="consent_checkbox" class="privacy_policy_checkbox">
+                            <input type="checkbox" class="consent_checkbox" name="consent" required>
+                            <p>同意する</p>
+                        </label>
                     </div>
 
                     <div id="inquiry_submit-btn" class="submit-btn">

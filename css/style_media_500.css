@@ -1,6 +1,7 @@
 @media screen and (max-width: 500px) {
 	body {
-		font-size: 7px;
+		/* font-size: 7px; */
+		font-weight: 100;
 	}
 
 	h2 {
@@ -8,16 +9,20 @@
 	}
 
 	h3 {
-		font-size: 12px;
+		/* font-size: 12px; */
+	}
+
+	.header {
+		display: none;
 	}
 
 	.header nav {
-		font-size: 7px;
+		/* font-size: 7px; */
 	}
 
 	#header_inquiry {
-		width: 60px;
-		font-size: 7px;
+		/* width: 60px; */
+		/* font-size: 7px; */
 		box-shadow: 0px 1px 10px rgba(255, 224, 191, 1);
 	}
 
@@ -26,21 +31,24 @@
 	}
 
 	#top_image_text p {
-		font-size: 9px;
+		/* font-size: 9px; */
+		font-weight: bold;
 	}
 
 	#top_image_text h1 {
-		font-size: 15px;
+		font-size: 17px;
 		text-shadow: none;
 	}
 
 	/* Growth Upプログラム */
 	#top_title {
-		font-size: 15px;
+		font-size: 17px;
+		font-weight: bold;
 	}
 
 	.text_appeal {
 		font-size: 12px;
+		font-weight: bold;
 	}
 
 	.solution_text_box {
@@ -52,7 +60,7 @@
 	}
 
 	.seminar_contents {
-		width: 62%;
+		width: 80%;
 	}
 
 	.seminar_contents_icon {
@@ -66,20 +74,28 @@
 		height: 100px;
 	}
 
+	/* 各プランの箱 */
+	.course_plan_box {
+		width: 50%;
+	}
+
 	#course_contact_flow {
+		width: 100%;
 		border: 1px #ccc solid;
 	}
 
 	.course_plan_box h3 {
 		margin-bottom: 0;
+		font-size: 15px;
 	}
 
 	.course_price {
-		font-size: 12px;
+		/* font-size: 12px; */
+		font-weight: bold;
 	}
 
 	.course_contents_line small {
-		font-size: 4px;
+		/* font-size: 4px; */
 	}
 
 	.voice_triple_box:hover {
@@ -94,20 +110,31 @@
 		background-size: 100%;
 	}
 
+	.voice_customer {
+		font-size: 10px;
+	}
+
 	.voice_appeal_word {
 		font-size: 12px;
 	}
 
 	#prof_ceo_img_box {
-		font-size: 6px;
+		width: 35%;
+		font-size: 7px;
 	}
-
+	
+	#prof_ceo_grid {
+		width: 65%;
+	}
+	
 	#prof_ceo_grid h3 {
 		border-bottom: 1.5px #040D64 solid;
+		font-size: 12px;
 	}
-
+	
 	#prof_ceo_grid p {
 		border-bottom: 1px #dbdbdb solid;
+		font-size: 9px;
 	}
 
 	.to_top_button {
