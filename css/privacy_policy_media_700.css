@@ -3,6 +3,10 @@
         font-size: 10px;
     }
 
+    button {
+        font-size: 11px;
+    }
+
     main {
         border-radius: 15px;
     }
