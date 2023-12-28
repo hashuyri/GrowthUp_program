@@ -1,6 +1,10 @@
 @media screen and (max-width: 500px) {
     body {
-        font-size: 7px;
+        /* font-size: 7px; */
+    }
+
+    main {
+        width: 90%;
     }
 
     h1 {
@@ -8,10 +12,11 @@
     }
 
     h2 {
+        border-left: 1.5px #E12850 solid;
         font-size: 11px;
     }
 
     small {
-        font-size: 5px;
+        /* font-size: 5px; */
     }
 }

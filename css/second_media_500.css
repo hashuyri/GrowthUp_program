@@ -1,6 +1,6 @@
 @media screen and (max-width: 500px) {
     body {
-        font-size: 8px;
+        /* font-size: 8px; */
     }
 
     h1 {
@@ -15,11 +15,33 @@
         font-size: 13px;
     }
 
+    /* ボタンの箱 */
+    #btn_box {
+        width: 45%;
+    }
+
+    th {
+        padding-left: 10%;
+    }
+
+    .icon {
+        width: 15%;
+    }
+
     .input {
-        font-size: 7px;
+        /* font-size: 7px; */
+    }
+
+    #contact_text,
+    #inquiry_text {
+        width: 95%;
+    }
+
+    .consent_checkbox {
+        transform: scale(0.9);
     }
 
     small {
-        font-size: 5px;
+        /* font-size: 5px; */
     }
 }

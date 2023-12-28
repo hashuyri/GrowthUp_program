@@ -1,6 +1,5 @@
 @media screen and (max-width: 700px) {
     body {
-        margin-top: 10%;
         font-size: 11px;
     }
 
@@ -10,6 +9,10 @@
 
     h2 {
         font-size: 13px;
+    }
+
+    #thanks_text {
+        margin: 0 5%;
     }
 
     #company_data li,

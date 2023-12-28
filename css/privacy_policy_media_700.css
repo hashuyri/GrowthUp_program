@@ -1,6 +1,6 @@
 @media screen and (max-width: 700px) {
     body {
-        font-size: 9px;
+        font-size: 10px;
     }
 
     main {
@@ -12,6 +12,7 @@
     }
 
     h2 {
+        border-left: 2px #E12850 solid;
         font-size: 16px;
     }
 
