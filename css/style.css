@@ -100,7 +100,7 @@ h3 {
 
 /* ヘッダーボタンのテキスト */
 #header_inquiry button {
-	padding: 10% 15%;
+	padding: 12% 15%;
 	color: white;
 	font-weight: bold;
 	background: linear-gradient(93.72deg, #E12850 0%, #F5873C 100%);

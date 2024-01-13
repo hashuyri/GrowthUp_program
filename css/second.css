@@ -60,7 +60,7 @@ header {
 }
 
 /* ヘッダーボタンの装飾等 */
-#form_change_btn {
+#form_green_btn {
     padding: 5% 0;
     width: 100%;
     color: #ffffff;
@@ -72,8 +72,28 @@ header {
     cursor: pointer;
 }
 
-#form_change_btn:hover {
+#form_green_btn:hover {
     background: #00723d;
+    box-shadow: none;
+    transform: translateY(2px);
+    /* 上（Y）方向に4px動かす */
+}
+
+/* ヘッダーボタンの装飾等 */
+#form_orange_btn {
+    padding: 5% 0;
+    width: 100%;
+    color: #ffffff;
+    font-weight: bold;
+    border: 0;
+    border-radius: 50px;
+    background: linear-gradient(3.72deg, #E12850 0%, #F5873C 100%);
+    box-shadow: 0px 10px 10px rgb(255, 217, 191);
+    cursor: pointer;
+}
+
+#form_orange_btn:hover {
+    background: #E12850;
     box-shadow: none;
     transform: translateY(2px);
     /* 上（Y）方向に4px動かす */
@@ -121,7 +141,7 @@ header {
 }
 
 /* アンケートフォーム全体 */
-#contact_main_box {
+#main_box {
     margin-top: 2%;
     display: flex;
     flex-direction: column;
@@ -308,11 +328,10 @@ th label {
 /* お問い合わせフォーム */
 #inquiry {
     width: 100%;
-    display: none;
 }
 
 #inquiry h2 {
-    margin-bottom: 2%;
+    margin-bottom: 1%;
 }
 
 /* 「必須」装飾 */
