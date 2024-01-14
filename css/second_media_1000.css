@@ -15,6 +15,15 @@
         font-size: 18px;
     }
 
+    input,
+    select,
+    textarea,
+    #return_btn,
+    #form_green_btn,
+    #form_orange_btn {
+        font-size: 15px;
+    }
+
     .input {
         font-size: 13px;
     }

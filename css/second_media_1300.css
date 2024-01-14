@@ -11,6 +11,15 @@
         font-size: 35px;
     }
 
+    input,
+    select,
+    textarea,
+    #return_btn,
+    #form_green_btn,
+    #form_orange_btn {
+        font-size: 20px;
+    }
+
     th {
         display: flex;
         align-items: center;

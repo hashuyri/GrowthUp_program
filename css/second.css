@@ -41,6 +41,15 @@ h3 {
     margin-bottom: 2%;
 }
 
+input,
+select,
+textarea,
+#return_btn,
+#form_green_btn,
+#form_orange_btn {
+    font-size: 23px;
+}
+
 header {
     padding-left: 2%;
     display: flex;
@@ -101,13 +110,12 @@ header {
 
 /* 「戻る」ボタンの箱 */
 #return_btn {
-    margin-top: 2%;
-    margin-left: 2%;
+    margin: 2%;
     border: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #040D64;
+    color: #000000;
     font-weight: bold;
     background-color: transparent;
     cursor: pointer;
@@ -117,7 +125,7 @@ header {
 .dli-arrow-left {
     display: inline-block;
     vertical-align: middle;
-    color: #040D64;
+    color: #000000;
     line-height: 1;
     position: relative;
     width: 1.4em;
