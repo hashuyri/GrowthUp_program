@@ -122,23 +122,27 @@
 		width: 35%;
 		font-size: 7px;
 	}
-	
+
 	#prof_ceo_grid {
 		width: 65%;
 	}
-	
+
 	#prof_ceo_grid h3 {
 		border-bottom: 1.5px #040D64 solid;
 		font-size: 12px;
 	}
-	
+
 	#prof_ceo_grid p {
 		border-bottom: 1px #dbdbdb solid;
 		font-size: 9px;
 	}
 
+	.footer small {
+		margin-left: 12%;
+	}
+
 	.to_top_button {
-		width: 25px;
-		height: 25px;
+		width: 35px;
+		height: 35px;
 	}
 }
