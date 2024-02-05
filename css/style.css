@@ -305,6 +305,11 @@ h3 {
 	color: #123474;
 }
 
+.link_under_bar:hover {
+	color: #111111;
+	text-decoration: underline;
+}
+
 /* 土台のBOX */
 #seminar_box {
 	margin: 5% 0;
